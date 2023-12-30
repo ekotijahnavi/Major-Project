@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title>login</title>
+    <link rel='stylesheet' href="{% static 'css/login2.css' %}">
+    <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Rubik:400,700'>
+<body>
+
+<h2>Login Form</h2>
+{% if form.errors %}
+  <p>Username or password are not correct </p>
+{% endif %}
+<div class="login-form">
+<form action="" method="POST" novalidate>
+  <h1>Login</h1>
+  <div class="imgcontainer">
+    <!--<img src="{% static 'images/img2.jpg' %}" alt="" class="avatar">-->
+  </div>
+  <div class="container">
+    <div class="content">
+    <div class="input-field">
+    <strong>
+  {% csrf_token %}
+      {% for fm in form %}
+        {{fm.label_tag}} {{fm}} {{fm.errors|striptags}}<br><br>
+        {% endfor %}
+   </strong>
+   </div>
+   </div>
+          <!---
+      <label for="uname"><b>Username</b></label>
+      <input type="text" placeholder="Enter Username" name="uname" required><br>
+  
+      <label for="psw"><b>Password</b></label>
+      <input type="password" placeholder="Enter Password" name="psw" required> <br> --> 
+
+    <div class="action">
+    <a href={% url 'loginaction' %}> <button class="button">login</button></a>
+    <a href={% url 'signupaction' %}><input type="button" class="button" value="newuser"></a><br>
+ 
+   <!---<h1 style="color:#f44336">{{error}}</h1>
+    <h1 style="color:#04AA6D">{{info}}</h1>-->
+   </div>
+  </div>
+
+ 
+</form>
+</div>
+
+</body>
+</html>

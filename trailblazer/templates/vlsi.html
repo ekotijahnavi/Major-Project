@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vlsi-prerequisites</title>
+    <link rel='stylesheet' href="{% static 'css/vlsi.css' %}">
+</head>
+<body>
+    <a href="{% url 'preview' %}"><input  class="button" type="button" value="back">
+    </a>
+    <h1>Very-large-scale integration (VLSI) </h1>
+
+    <div class="center1">
+        <img class="back" src={% static "images/vlsi1.jpeg"%}>
+        <p class="p">The basic VLSI design is used to design complex circuits that incorporate millions of electrical components such as resistors, capacitors, and logic gates on a single chip. Because of its comparatively straightforward design procedures, the VLSI architecture is used in the majority of current chips. All topics in VLSI are interlinked and integrated, including RTL design, functional/physical/timing verification, testing, DFT, synthesis, physical design, standard cell design, and so on.<br>
+            <span>Here are a few points to help you get started with basic VLSI design:</span>
+            <br>1.Logic Design (LD)
+            <br>2.Coding in HDL, RTL, and HVL
+            <br>3.Fundamentals of CMOS
+            <br>4.EDA Tools
+            <br>5.Basics of Computer Architecture and Microprocessors
+            <br>6.Algorithm/protocol implementation
+            <br>7.Timing Analysis
+            <br>8.Scripting and UNIX fundamentals
+        </p>
+    </div>
+    <div class="section1">
+        <h2>1.Logic Design (LD)</h2>
+        <div class="center">
+            <p>This is by far the most crucial talent that you should have. Programming is only the execution of your concept, whereas LD is the thought process itself. You must be able to create a module with a minimum number of Gates, minimum power and maximum Performance. This phase is higher in the design hierarchy and has an impact on the entire flow. As a result, it’s critical to nail down your LD concepts like: FSM design, MUX design, Flops-latches design, Sync.-Async design, and so on.</p>
+            <p><span>How to get started: </span>Take up an interesting problem and try to create an efficient FSM design, and implement it with the fewest resources possible at the gate level.</p>
+        </div>
+    </div>
+    
+    <div class="section1">
+        <h2>2.Coding in HDL, RTL, and HVL</h2>
+        <div class="center">
+            <p>Well, the industry requires you to code well, for you to get started with basic VLSI design. There is a distinction between RTL and C-coding. This is where the concept of ‘time’ comes into play here. You must know at least one of the two: either Verilog or VHDL coding. With RTL, you are effectively utilising a Hardware language to describe the LD.</p>
+            <p><span>How to get started: </span> Begin writing small modules as soon as possible. Don’t waste your time learning the syntax. Learn to specify module behaviour in RTL, and the compiler will do the rest for you. Begin by developing basic test benches to ensure that the logic and functionality are accurate. Learn Synthesizable RTL Coding later.</p>
+        </div>
+    </div>
+    
+    <div class="section1">
+        <h2>3. Fundamentals of CMOS</h2>
+        <div class="center">
+            <p>It is up to you whether you want to work on frontend or backend design. This is critical in backend/physical design as well as full-custom circuit/standard cell design. However, knowing solid MOS fundamentals is always a plus point. It is a requirement for all R&D positions.
+            </p>
+            <p><span>How to get started: </span>Begin by creating a basic circuit, such as an SRAM/DRAM block, then verifying its timing and functionality with SPICE simulations.
+            </p>
+        </div>
+    </div>
+   
+    <div class="section1">
+        <h2>4.EDA Tools</h2>
+        <div class="center">
+            <p>This is a must for all positions in the business. Because EDA tools are used to automate practically the whole VLSI pipeline, mastering them is essential. Almost all Backend jobs require it.</p>
+            <p><span>How to get started: </span>The equipment is pricey. If it’s part of the curriculum, your college will supply it. There is nothing like an internship in a semiconductor business if you are lucky enough to acquire one.
+
+            </p>
+        </div>
+    </div>
+
+    <div class="section1">
+        <h2>5.Basics of Computer Architecture and Microprocessors</h2>
+        <div class="center">
+            <p>ASICs/SoCs are used in almost every semiconductor industry nowadays. This necessitates an understanding of how the CPU is arranged and how the various components interact. Although you will just work on a single block within the CPU, knowing about a variety of blocks will help you better understand the chip and make the integration process easier.</p>
+            <p><span>How to get started: </span>Learn the fundamentals first. After that, try designing and implementing a single CPU component, such as an ALU or a DMA controller. Learn it stepwise right from RTL to Netlist to PD.</p>
+        </div>
+    </div>
+
+    <div class="section1">
+        <h2>6.Algorithm/protocol implementation</h2>
+        <div class="center">
+            <p>VLSI is only a method of implementation. In the end, you are creating a chip for a specific purpose, such as image processors, networking processors, or wireless chips. As a result, it’s critical to comprehend standard on-chip protocols and implement them on hardware such as FPGAs.</p>
+            <p><span>How to get started: </span>Take a basic crypto algorithm like RC6 and put it on an FPGA. Learning AMBA Protocols such as AHB, APB, and AXI will put you one step ahead.</p>
+        </div>
+    </div>
+
+
+    <div class="section1">
+        <h2>7.Timing Analysis</h2>
+        <div class="center">
+            <p>The cornerstone of VLSI is Timing Analysis. It is critical to understand clocks, meta-stability, STA, and assessing a circuit for setup and holding violations, as well as how to rectify them.</p>
+            <p><span>How to get started: </span>First, learn STA theory. You can follow suit. Synopsys PT/ICC is required to create timing reports, evaluate them, and then correct the errors if any.</p>
+        </div>
+    </div>
+
+
+    <div class="section1">
+        <h2>8.Scripting and UNIX fundamentals</h2>
+        <div class="center">
+            <p>Scripts are used to do repetitive operations. It’s required in both the frontend and backend of the application. For regression testing, registration verification, and other tasks in the frontend flow, companies mostly employ Perl scripting. Tcl programming is used in the backend to run different PD tasks. Learn the fundamentals of UNIX commands.</p>
+            <p><span>How to get started: </span>There are a plethora of online lessons available to help you learn. Begin by building basic scripts to carry out common activities. Start using UNIX instead of Windows. You must be well-versed in the UNIX environment.</p>
+        </div>
+    </div>
+</body>
+</html>

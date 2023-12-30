@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prerequisites for SketchUp</title>
+    <link rel='stylesheet' href="{% static 'css/sketchup.css' %}">
+</head>
+<body>
+    <a href="{% url 'preview' %}"><input  class="button" type="button" value="back">
+    </a>
+    <h1>SketchUp</h1>
+    <div class="center1">
+        <img class="back" src={% static "images/s.webp"%}>
+        <p class="p">Sketchup is a CAD solution software that excels in creating 2D and 3D concepts. The application helps users to create 3D and 2D models of interiors, furniture, machine elements, landscapes and more.
+        
+        </p>
+        <p>Compared to the more cumbersome design philosophies of its competitors, SketchUp is truly an artist’s tool in its elegant simplicity and open design.</p>
+    </div>
+    <div class="center1">
+        <h2> SketchUp Official System Requirements</h2>
+        <h3>CPU (Processor) Requirements</h3>
+        <p class="p"> CPU is king when it comes to SketchUp. Pretty much anything and everything within SketchUp is done with the CPU.
+
+            <br>Specifically, SketchUp needs CPUs with high single-core performance.
+            
+            <br>Having lots of cores does nothing for SketchUp; it isn’t optimized for it.
+            
+            <br>And I can’t say that you should get a CPU with “X GHz” because GHz does not equal single-core performance. It’s more complicated than that.
+    
+            </p>
+        <p>Pretty much any CPU that can achieve a score higher than 150 will run SketchUp just fine. But if you want the best performance, CPUs with scores over ~1300 would be what you should aim for.</p>
+        <p>Note, SketchUp itself doesn’t require lots of cores, but CPU rendering absolutely does, so keep that in mind if you plan on using a CPU renderer.
+
+            <br>If you’re building a PC right now, Intel’s Alder Lake 12th generation CPUs are the best when it comes to single-core performance. Even if you plan on doing any multithreaded (multicore) work, they’ll still suit you just fine.
+            
+            <br>I would suggest looking at the Intel i5-12600K first and then going from there.
+            <br>It’s one of the best bang-for-the-buck CPUs available right now, and you can easily upgrade to an i7 or i9 if you really need the horsepower for something other than SketchUp.
+        </p>
+        <h3>GPU (Video Card) Requirements
+        </h3>
+        <p>The GPU requirements for SketchUp depend on what type of rendering you plan on doing.
+
+            <br>Are you going to be using your GPU to render? You will need a powerful GPU. If not, you can get away with a much weaker GPU.
+            
+            <br>Take a look at our NVIDIA and AMD performance lists to figure out what you need. If you don’t plan on using your GPU to render, you can get away with anything above a GTX 1650 or RX 570.
+            
+            <br>If you plan on using your GPU to render, your options get narrowed down to just NVIDIA GPUs. Most GPU renderers don’t support AMD GPUs the way they do NVIDIA, so you would be getting a lot less performance if you go with AMD, sadly.
+            
+            <br>The RTX 3060 is a great card to start off with if you don’t want to spend too much money but want to get something that can render quite well.</p>
+        <h3>RAM (Memory) Requirements</h3>
+        <p>As with most programs, RAM is pretty easy.
+
+        <br>Get at least 16 GBs of RAM.</p>
+        <p>Modern OS’ and other applications can absolutely chew through RAM, barely leaving anything for SketchUp. So 16 GBs generally gives you enough RAM to not run into those issues.
+
+            <br>But depending on how complex your SketchUp creations can get—or how many browser tabs you have open—you might want to think about upgrading to 32 GBs as well.</p>
+        <p>It’s not that much more expensive than 16 GBs, and it’d give you plenty of wiggle room when it comes to dense SketchUp scenes and other background applications.</p>
+        
+   
+    </div>
+
+    
+    <div class="section1">
+       
+        <div class="center">
+            
+            <h2>Performance Demands of Different Applications of SketchUp</h2>
+            <p>When it comes to something like SketchUp, it’s hard to give general recommendations because there are so many things that you could do with it.
+
+               <br> So the best way to solve that issue is to focus on some of those aspects to help figure out what exactly you need for what you will be doing.</p>
+            <h3>Low Poly Modeling</h3>
+            <p>Low poly modeling is a style of 3D modeling that is very forgiving with hardware constraints.
+
+                <br>In pretty much any 3D modeling suite, low poly modeling can be done with even the bare minimum hardware needed to run the program, and that holds true for SketchUp as well.</p>
+            <p>If the scenes that you are making are below or around 50k triangles, then you most likely won’t have any issues with SketchUp regardless of your hardware unless your PC is 10+ years old.
+
+               <br> <b>Hardware Requirements:</b>For low poly scenes, the main thing you need is a good CPU with decent single-core performance. Pretty much anything made in the last 10 years would do.
+                
+                <br>And you can get away with around 4 GBs of RAM, but 8 GBs would make your life easier by reducing any RAM-related hitches.
+                
+                <br>And for the GPU, unless you plan on rendering with your GPU, even an iGPU would do.
+                
+                </p>
+            <h3>High Poly Modeling</h3>
+            <p>
+                Compared to low poly modeling, high poly modeling is significantly more resource hungry, especially regarding the CPU.
+                
+                
+                <br>SketchUp, like most other programs, is a very single-thread optimized application, meaning that it is only optimized to run on one or two cores at most.
+                
+                <br>Because of this, it requires a lot more processing power from the CPU to calculate the data that it’s processing.
+                
+                <br>Because of the power of modern-day CPUs, this isn’t very apparent for the most part when you’re working on moderately sized scenes.
+                
+                <br>But try to make scenes with millions of polys and your CPU will really be put through the paces.
+                
+                <br><b>Hardware Requirements:</b> For high poly scenes, the main component that you need is a CPU with high single-core performance.
+                
+                <br>Secondly, SketchUp can go through quite a bit of RAM when you’re making huge scenes, so you should have at least 16 GBs of RAM, preferably 32 GBs.
+                
+                <br>And finally, the GPU can be something more affordable, it really won’t be used much unless you plan on using your GPU to render. In that case, you will need to buy a good GPU as well.
+                
+                <br>An RTX 3060 would tide you over well, but if you’re a professional with deadlines, investing in something like an RTX 3080 or even an RTX 3090 might benefit you.</p>
+        
+        <h3>Texturing</h3>
+        <p>
+            Like pretty much everything else in SketchUp, texturing is also mostly dependent on your CPU, specifically the single-core performance.
+            
+            <br>And if you’re using high-resolution textures, having enough RAM to store them is also pretty important.
+            
+            <br>Hardware Requirements: For texturing, the main thing to focus on is the CPU. Any relatively modern CPU with good single-core performance released in the last 5~ years will do just fine.
+            
+            <br>And for RAM, you should get a minimum of 8 GBs, but I recommend getting 16 GBs or even 32 if you need it.
+            
+            <br>The GPU doesn’t matter much for texturing. Pretty much any ol’ GPU will do.</p>
+        <h3>Rendering (Third-Party Renderers)</h3>
+        <p>
+            Rendering is the place where the paradigm shifts with SketchUp.Up until now, the main thing that you’ve needed for SketchUp to run well has been a CPU with good single-core performance, and you barely even needed a GPU at all, but that changes drastically when it comes to rendering.
+            
+            
+           <br> If you plan on going with CPU rendering, getting a CPU with good single-core performance is still important, but it becomes crucial that you make sure that your CPU has enough cores as well.
+            
+            <br>CPU rendering pretty much scales linearly with the number of cores you have, meaning double the cores equal double the speed at which you render.
+            
+            <br>Single core vs multi core performance
+            
+            <br>But you also have to keep in mind that the more cores you have, the less single-core performance you’re going to have.
+            
+            <br>The balanced sweet spot is around 16 cores, but if you need even more CPU performance for rendering, it might be wise to look into creating a new machine for just CPU rendering.
+            
+            <br>And if you plan on going with GPU rendering, getting a good GPU with enough VRAM is your goal.
+            
+            <br><b>Hardware Requirements:</b>For CPU rendering, get a CPU with at least 12 cores, 16 preferably. Thankfully, most CPUs these days are relatively good at both multicore applications and single-core applications, so you don’t have to have any trade-offs up until around 16 cores.
+            
+            <br>However, if you need more cores for CPU rendering, I’d advise that you look into making a new PC just for rendering instead so that you can continue to have fast application performance while getting faster renders.
+            
+            <br>And for GPU rendering, I’d recommend that you go with an NVIDIA RTX card with at least 10 GBs of VRAM.
+            
+            <br>Most if not all GPU-based renderers available today have spotty support for AMD or none at all. So that narrows down your options to just NVIDIA GPUs sadly.
+            
+            </p>
+        </div>
+    </div>
+
+   
+    
+   
+
+</body>
+</html>

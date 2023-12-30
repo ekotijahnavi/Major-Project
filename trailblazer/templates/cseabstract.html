@@ -1,0 +1,49 @@
+<html>
+{% load staticfiles %}
+<head>
+<title>cse abstracts</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+<link rel="stylesheet" href="{% static 'css/abstract1.css' %}">
+</head>
+<body>
+    <a href={% url 'projectideas' %}><input type="button" class="button" value="back"></a>
+    <h1>Upload your abstracts</h1>
+<div class="container">
+  
+      
+           
+            <form class="" action="" method="post" >
+                {% csrf_token %}
+                <p><label for="id_name"><p>Name:</p>&nbsp;&nbsp;&nbsp;&nbsp;</label> <input type="text" name="name" pattern="^([A-Z]|[a-z])*$" id="id_name" placeholder="Ex:-Jahnavi" required /></p>
+                <p><label for="id_email"><p>Email:</p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label> <input type="email" name="email" id="id_email" pattern="^([a-z]|[0-9])*@gmail.com$" placeholder="Ex:-ekotijahnavi0504@gmail.com" required  /></p>
+                <p><label for="id_project"><p>Project:</p>&nbsp;&nbsp;&nbsp;&nbsp;</label> <input type="text" name="project" id="id_project" placeholder="Ex:-library management system" required /></p>
+                <p><label for="id_feedback"> <p>Abstract:</p>&nbsp;&nbsp;&nbsp;&nbsp;</label><textarea name="abstract" cols="40" rows="3" required id="id_feedback">
+                </textarea></p>
+
+                <button type="submit" class="submit" >Submit </button>
+            </form> 
+   
+          
+</div>
+{% if messages %}
+{% for message in messages %}
+    <small {% if message.tags %} class="{{message.tags}}" {% endif %}>{{message}}</small>
+{% endfor %}
+{% endif %} 
+<a href=""><button class="refresh">refresh to see feedback</button></a>
+    <br><br>
+    <div class="feedback">
+        {% for instance in ab %}
+        
+          <div class="name">{{instance.fields.Project}}</div>
+           
+              
+          <div class="feed"><a href="{{instance.fields.Abstract}}">click here to view the abstract</a></div>
+        
+        {% endfor %}
+        </div>
+         
+           
+   
+</body>  
+</html>

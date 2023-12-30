@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+{% load staticfiles%}
+<html>
+<head>
+<title>Sign Up form</title>
+<link rel="stylesheet" href="{% static 'css/signup.css' %}">
+</head>
+<body>
+<center>
+  {% if form.success %}
+  <p>success </p>
+{% endif %}
+  <form action="" method="POST" id="border" novalidate>
+    {% csrf_token %}
+    <h1>Sign Up Form</h1>
+    <div class="text">
+      <table>
+      <tr class="id">
+        {% for fm in form %}
+            {{fm.label_tag}} {{fm}} {{fm.errors|striptags}} <br><br>
+        {% endfor %}
+</tr>
+</table><br>
+  <input type="submit" class="t" value="submit" />
+
+  <input type="reset" class="t" value="Reset"/>
+  <button class="t"><a href={% url 'loginaction' %}>login</a></button>
+</div>
+  </form>
+  
+</center>
+{% if messages %}
+  {% for message in messages %}
+    <small {% if message.tags %} class="{{message.tags}}" {% endif %}>{{message}}</small>
+  {% endfor %}
+{% endif %}
+</body>
+</html>

@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+
+<html lang="en">
+<head>
+	<title>About Us Section</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--<link rel="stylesheet" href={% static 'https://pro.fontawesome.com/releases/v5.10.0/css/all.css' %}>
+	<link rel="stylesheet" href={% static 'about.css' %}> -->
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;1,300&display=swap');
+	*{
+	margin:0px;
+	padding:0px;
+	box-sizing:border-box;
+	font-family: 'Poppins', sans-serif;
+	}
+	.section{
+	width:100%;
+	min-height:100vh;
+	background-color:#ddd;
+	}
+.container{
+	width:80%;
+	display:block;
+	margin:auto;
+	padding-top:100px;
+}
+.content-section{
+	float:left;
+	width:55%;
+}
+.image-section{
+	float:right;
+	width:40%;
+}
+.image-section img{
+	width:100%;
+	height:auto;
+}
+.content-section .content h3{
+	margin-top:20px;
+	color:#5d5d5d;
+	font-size:21px;
+}
+.content-section .content p{
+	margin-top:10px;
+	font-family: sans-serif;
+	font-size:18px;
+	line-height: 1.5;
+}
+.content-section .content .button{
+	margin-top:30px;
+}
+.content-section .content .button a{
+	background-color:#3d3d3d;
+	padding:12px 40px;
+	text-decoration:none;
+	color:#fff;
+	font-size:25px;
+	letter-spacing:1.5px;
+}
+.content-section .content .button a:hover{
+	background-color:#a52a2a;
+	color:#fff;
+}
+
+@media screen and (max-width:768px){
+	.container{
+	width:80%;
+	display:block;
+	margin:auto;
+	padding-top:50px;
+}
+}
+.content-section{
+	float:none;
+	width:100%;
+	display:block;
+	margin:auto;
+}
+.image-section{
+	float:none;
+	width:40%;
+	display:block;
+	margin-left:400;
+}
+.image-section img{
+	width:40%;
+	height:30%;
+	display:block;
+	float:"left";
+	margin-left:400;
+}
+.content-section .content .button{
+	text-align:center;
+}
+.content-section .content .button a{
+	padding:9px 30px;
+}
+.content-section .social
+{
+	text-align:center;
+}
+.t{
+	font-size:20px;
+}
+		</style>
+</head>
+<body>
+	<a href={% url 'home' %}>HOME</a>
+	<div class="section">
+		<div class="container">
+			<div class="content-section">
+				<div class="title">
+					<center><h1>About Us</h1></center>
+				</div>
+				<div class="image-section">
+					<img src={% static "images/l2.jpg" %}>
+				</div>
+				<div class="content">
+					<h2>'Rj Events'</h2>
+
+					<p>In a period where we are progressively overwhelmed with data and it’s trying to get a message over,'RJ EVENTS' adopts an insightful and aesthetic strategy to create critical encounters that work up feelings, discussions, and shareable minutes.</p>
+			<br><h2>EVENT ORGANIZERS</h2>
+				</div>
+				<div class="image-section">
+				<img src={% static "images/l2.jpg" %}></div>
+				<div class="t">Reshma Kalluru</div>
+				<div class="t">Wedding Organizer</div>
+				<div class="t">She is a good designer and organizer.She is working in RJ Events since 2017.She has handled 1000+ events.</div>
+				<br>
+				<div class="image-section">
+					<img src={% static "images/l2.jpg" %}></div>
+		<div class="t">E Jahnavi</div>
+		<div class="t">Birthday organizer</div>
+		<div class="t">She is a Birthday designer and organizer.She is working in RJ Events since 2020.She has organized 300+ events</div>
+		</div>
+		<br>
+		<div class="image-section">
+			<img src={% static "images/l2.jpg" %}></div>
+		<div class="t">P Sandhya</div>
+		<div class="t">Baby shower organizer</div>
+		<div class="t">She is a designer and organizer.She is working in RJ Events since 2021.She has organized 200+ events</div>
+		</div>
+
+	</div>
+</body>
+</html>
+					

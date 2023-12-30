@@ -1,0 +1,362 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mobile Application Development</title>
+    <link rel='stylesheet' href="{% static 'css/mad1.css' %}">
+    
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.2/font/bootstrap-icons.css">  
+</head>
+<body>
+    
+    
+    <a href="{% url 'preview' %}"><input  class="button" type="button" value="back">
+    </a>
+    <h1>Mobile Application Development</h1>
+
+    <div class="center1">
+        <img class="back" src={% static "images/mad1.jpeg"%}>
+        <p class="p">The number of mobile apps has been increasing for a long time. This part of software development is all about making apps that can be used on mobile devices.<br>
+            Different operating systems, like iOS and Android, need different kinds of apps. Apps offer a better user experience than mobile web browsing because they use the phone’s built-in features.<br>
+            There are many different apps, such as music, games, communication, calendars, etc. I’m sure you’ve heard of Spotify, HeadSpace, WhatsApp, Instagram, and Facebook, some of the most used apps worldwide.
+        </p>
+        <p class="p">Mobile app development is making apps that work on mobile devices. These programs can be pre-installed, or the user can download them and install them later. They use the device’s network features to work with computing resources from afar. So, making a mobile app involves:
+        <br>Installing software on the device.
+        <br>Setting up backend services so that APIs can be used to access data.
+        <br>Testing the app on the devices it will use.
+        <br>To make mobile apps that many people can use, you also need to consider screen sizes, hardware requirements, and many other things. Since there are more and more jobs in the mobile app development industry, entrepreneurs, startups, and especially developers need to understand how the process works. </p>
+    </div>
+    <br>
+    <div class="center1">
+        <p>Mobile Applications can be classfied into three types:<br>
+            1.Native Application
+            2.Web-Based Application
+            3.Hybrid Application
+        </p>
+        <h3>Native Applications</h3>
+
+        <p> Native Application designed to run on a particular platform such as Android,windows or ios.<br>Examples:</p>
+        <span class="bi bi-whatsapp green-color"></span>
+        <a href="#" class="fa fa-facebook"></a>
+        <h3>Web-based Applications</h3>
+        <p>Web-based Application require internet connectivity and are written in HTML,CSS and Javascript<br>Examples:</p>
+
+        <p>google maps</p>
+        <h3>Hybrid Applications</h3>
+        <p>Hybrid Applications is a combination of both Native and web-based applications.</p>
+        <i class="fa fa-twitter" style="font-size:48px;color:#1DA1F2 "></i>
+        <i class="fa fa-instagram" style="font-size:48px;color:yellowgreen"></i>
+<br>
+
+    </div>
+    <div class="center1">
+        <p>Mobile Application development can be classfied into many types:<br>
+            1.<a href="#android">Android App Development</a><br>
+            2.<a href="#ios">Ios App Development</a><br>
+            3.Flutter app Development
+        </p>
+               
+    </div>
+   <br>
+   <br>
+   
+    <div class="section">
+        <h1 class="andoid">Android App Development</h1>
+        <p>The part of a website where the user interacts directly is termed as front end.<br> It is also referred to as the ‘client side’ of the application.</p>
+        <p><span> <a href="#lang">Languages</a>  :</span>Java,Kotlin,c++,c#,Dart</p>
+        <p><span><a href="#frame">Frameworks</a> :</span>Flutter,React Native,xamarin,Apache cordova,Ionic</p>
+        <p><span><a href="#db">Databases</a> :</span>Android comes in with built in <span>SQLite database</span> implementation.
+        <br>Mysql,Firebase,PostgreSQL,coucheBaselite</p>
+    </div>
+    <div class="section">
+        <h1 class="ios">ios App Development</h1>
+        <p>The part of a website where the user interacts directly is termed as front end. <br>It is also referred to as the ‘client side’ of the application.</p>
+        <p><span> <a href="#lang">Languages</a> :</span>Swift,c#, Objective-C,Flutter,React Native</p>
+        <p><span><a href="#frame">Frameworks</a> :</span>SwiftUI,Flutter,Kotlin MultiPlatform Mobile,Intel XDk,<br>Sencha Touch,Alamofire,Native Scripts,React Native,xamarin,Ionic</p>
+        <p><span><a href="#db">Databases</a> :</span>SQlite,Realm,Core Data</p>
+        </div>
+    <h2 id="lang">Languages</h2>
+    <div class="lang">
+    <a href="#java">Java</a>
+    <a href="#kotlin">kotlin</a>
+    <a href="#c++">C++</a>
+    <a href="#c">C#</a>
+    <a href="#hcj">Html,Css,Javascript</a>
+    <a href="#dart">Dart</a>
+    </div>
+    
+    <div class="section1">
+        <h2 id="java">Java</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/java1.jpeg" %}>
+            <p>Firstly Java was the official language for Android App Development (but now it was replaced by Kotlin) and consequently, it is the most used language as well. Many of the apps in the Play Store are built with Java, and it is also the most supported language by Google. In addition to all this, Java has a great online community for support in case of any problems (And trust me, there will be problems!). </p>
+            <p>However, Java is a complicated language for a beginner to use as it contains complex topics like constructors, null pointer exceptions, concurrency, checked exceptions, etc. Also, The Android Software Development Kit (SDK) increases the complexity to a new level! </p>
+            <p>All in all, Java is a great language to experience the full joys of Android App Development. However, it may be a little complex for beginners who would prefer to start with something easier and then return to it. </p>
+        </div>
+    </div>
+    <div class="section1">
+        <h2 id="kotlin">Kotlin</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/kotlin.jpeg" %}>
+            <p>Now Kotlin is the official language for Android App Development declared by Google in 2019. Kotlin is a cross-platform programming language that may be used as an alternative to Java for Android App Development. It has also introduced as a secondary “official” Java language in 2017. Kotlin can interoperate with Java and it runs on the Java Virtual Machine. 
+            <p>The only sizable difference is that Kotlin removes the superfluous features of Java such as null pointer exceptions. It also removes the necessity of ending every line with a semicolon. In short, Kotlin is much simpler for beginners to try as compared to Java and it can also be used as an “entry point” for Android App Development. </p>
+            </p>
+        </div>
+    </div>
+    <div class="section1">
+        <h2 id="c++">C++</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/c++.png" %}>
+            <p>C++ can be used for Android App Development using the Android Native Development Kit(NDK). However, an app cannot be created totally using C++ and the NDK is used to implement parts of the app in C++ native code. This helps in using C++ code libraries for the app as required. </p>
+            <p>While C++ is useful for Android App Development in some cases, it is much more difficult to set up and is much less flexible. It may also lead to more bugs because of the increased complexity. So, it is better to use Java as compared to C++ as it does not provide enough gain to offset the efforts required. 
+
+            </p>
+        </div>
+    </div>
+    <div class="section1">
+        <h2 id="c#">C#</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/c#.png" %}>
+            <p>C# is quite similar to Java and so it is ideal for Android App Development. Like Java, C# also implements garbage collection so there are fewer chances of memory leaks. And C# also has a cleaner and simpler syntax than Java which makes coding with it comparatively easier. </p>
+            <p>Earlier, the biggest drawback of C# was that it could run only on Windows systems as it used the .NET Framework. However, this problem was handled by Xamarin. Android (formerly Mono for Android) is a cross-platform implementation of the Common Language Infrastructure. Now, Xamarin. Android tools can be used to write native Android apps and share the code across multiple platforms. </p>
+        </div>
+    </div>
+    <div class="section1">
+        <h2 id="hcj">HTML, CSS, JavaScript</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/hcj.png" %}>
+            <p>Android apps can be created using HTML, CSS, and JavaScript using the Adobe PhoneGap framework that is powered by Apache Cordova. The PhoneGap framework basically allows the usage of web development skills to create hybrid apps that are shown through “WebView” but are packaged like an app.</p>
+            <p>While the Adobe PhoneGap framework is enough for basic tasks in the realm of Android App Development, it hardly requires much programming except for JavaScript. And since it needs a lot of work to even create a decent app, it is better to use the other languages in this list if you want to be called a true Android developer(Yes…That’s a thing!). But if you are comfortable with Javascript, you can learn React Native, which is an open-source framework that is now highly in demand. You can develop beautiful and powerful  Hybrid apps with react native means your app will be on android and ios both. Hybrid app development is getting so much popular so learning react-native can help you make your carrier in Software development.</p>
+        </div>
+    </div>
+    <div class="section1">
+        <h2 id="dart">Dart </h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/dart.png" %}>
+            <p>Dart is an open-source programming language that powers the Flutter framework, which is getting a lot of traction these days because of its ability to deliver beautiful and performance apps for the web, desktop, and mobile in lesser time. The key selling point of dart is that it is designed by Google as a client-optimized language for fast apps on any platform. Dart mainly focuses on making UI development easier for developers with features such as hot-reload, which lets developers see changes instantly while working on the app. Dart is also known for its fast performance, it compiles to ARM and x64 machine code for mobile, desktop, and backend. And to JavaScript for the web apps.</p>
+        </div>
+    </div>
+    <h2 id="frame">Frameworks</h2>
+    <div class="lang">
+    <a href="#Flutter">Flutter</a>
+    <a href="#react">React Native</a>
+    <a href="#xamarin">xamarin</a>
+    <a href="#apache">Apache cordova</a>
+    <a href="#ionic">Ionic</a>
+    <a href="#swift">SwiftUI</a>
+    <a href="#kotlin1">Kotlin MultiPlatform Mobile</a>
+    <a href="#intel">Intel XDk</a>
+    <a href="#sencha">Sencha Touch</a>
+    <a href="#alamo">Alamofire</a>
+    <a href="#native">Native Scripts</a>
+      <a href="#core">Core Data</a>
+    </div>
+    <div class="section1">
+        <h2 id="Flutter">Flutter</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/Flutter.png" %}>
+            <p>Flutter is an open and free framework from Google that allows you to create native Android and iOS applications with a simple codebase.</p>
+            <p>It’s a ground-breaking SDK for cross-platform application development, which distinguishes it because it takes a novel way of creating native-like apps. It’s an unrivaled and dependable smartphone UI framework for swiftly developing attractive apps by accelerating development.</p>
+            <p>Flutter is a comprehensive and precise framework that contains widgets, a rendering engine, debugging and integrating APIs, and resources to assist developers in creating and deploying beautiful mobile applications. Flutter has been used by a number of well-known organizations, including Google and Abbey Road Studios.</p>
+            <p>Features of Flutter –
+                <br>More rapid development.
+                <br>Cross-platform.
+                <br>Visuals that are both appealing and engaging.
+                <br>Performance that is pretty similar to that of a native</p>
+        </div>
+    </div>
+
+    <div class="section1">
+        <h2 id="react">React Native</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/reactn.png" %}>
+            <p>Facebook created React Native in 2015 as an open-source, cross-platform framework. It can be used to develop apps for iOS, Android, UWP and Web. With React Native, developers can build mobile apps using React and JavaScript, along with native Android app development capabilities.</p>
+            <p>This is the best Android app development framework in TATEEDA GLOBAL’s opinion. Some of the best applications developed with React Native are Airbnb and Discord.</p>
+            <p>The key feature of React Native is that instead of simulating native performance (like most other frameworks do), it allows developers to construct user interfaces from the system’s native building blocks backed by React’s special type of JavaScript. Since native Android blocks are utilized, React Native apps render as if they were native applications. </p>
+            <p>The best thing about this framework is that you don’t have to update or redesign native Android components used in the applications, but they auto-update simultaneously with the system’s general updates. It allows keeping many apps in good shape for free, with no additional work from app developers required. </p>
+        </div>
+    </div>
+
+    <div class="section1">
+        <h2 id="xamarin">Xamarin</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/xamarin.png" %}>
+            <p>Xamarin is an alternative cross-platform application development framework for developing applications for Android and iOS. Because they employ the C# programming language, the applications need fewer lines of code. As a result, the process of coding is quicker. Also, it allows us to rapidly transfer the scripts across other systems, such as Windows and macOS.</p>
+            <p>Microsoft has acquired Xamarin. Because developing an app is so much faster these days, you might assume that quicker development means sacrificing quality and construction. However, Xamarin-based apps deliver flawless native functionality about quality and efficiency. As a result, its connection with Microsoft Visual Studio is a plus in terms of app development management and productivity.</p>
+            <p>An intermediate layer in Xamarin controls the connection between the core system code and standard code. Utilizing tools, frameworks, and computer languages backed by an engaged community, programmers, may cultivate an environment with APIs, backends, components, and more.</p>
+            <p>Features of Xamarin –
+
+            <br>Rapid Advancement
+            <br>Appearance and touch of a native app
+            <br>Compatibility with a variety of devices</p>
+        </div>
+    </div>
+
+    <div class="section1">
+        <h2 id="apache">Apache Cordova </h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/cordova.png" %}>
+            <p>Apache Cordova, previously marketed as PhoneGap, is a popular developer-friendly application development framework. It’s a cross-platform application development framework that builds mobile apps using CSS3, HTML5, and JavaScript. The Cordova plugins allow programmers to utilize smartphone hardware features such as GPS, cameras, and accelerometer to offer a native-like interface. Apache Cordova’s prominent characteristics are a quicker production approach with a single code plus third-party application administration tool.</p>
+            <p>Features of PhoneGap –
+
+            <br>A single source of code
+            <br>Streamlining the development procedure
+            <br>App management methods from third parties</p>
+        </div>
+    </div>
+
+    <div class="section1">
+        <h2 id="ionic">Ionic</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/ionic.png" %}>
+            <p>Ionic is an explicit framework for crafting Progressive Web Apps (PWAs), hybrid, and cross-platform mobile applications. Ionic is an accessible framework that uses Apache Cordova (PhoneGap) plus Angular to enable programmers to create Android and iOS applications that seamlessly operate together.</p>
+            <p>The framework aids developers in creating solid and feature-rich native apps. The most prominent feature of Ionic would be that it lets programmers employ various UI components in the application framework, including filtration, inputs, views, easy navigation, and actions sheets.</p>
+            <p>Features of Ionic –
+
+            <br>App development for many platforms.
+            <br>The user interface is consistent.
+            <br>Enhanced performance.
+            <br>The flexibility of the user</p>
+        </div>
+    </div>
+
+    <div class="section1">
+        <h2 id="swift">SwiftUI</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/swift.png" %}>
+            <p>With the emergence of SwiftUI, every single developer has been examining its usefulness for app development. The framework has brought an acceleration in development, which is exciting for developers. Moreover, it is accessible across the entire Apple setting, which means that developers can build apps for multiple platforms at the same time.</p>
+            <p>Apart from this, SwiftUI allows your app to match other various mobile app development framework settings out of the box regardless of the framework’s presence.</p>
+        </div>
+    </div>
+
+    <div class="section1">
+        <h2 id="kotlin1">Kotlin Multiplatform Mobile</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/kotlin1.jpeg" %}>
+            <p>JetBrains developed Kotlin Multiplatform Mobile that acts as an SDK for cross-platform mobile development. It utilizes the multiplatform functionality of Kotlin. KMM offers various tools and features to enhance the end experience of developing cross-platform mobile apps with much efficiency.</p>
+            <p>Frequently, iOS and Android versions of an app can have many things in common. However, they also differ remarkably in terms of their UI. Apart from this, an app’s data management, business logic, authentication, and analytics can also be alike. KMM allows you to have this flexibility and also reap the benefits of native programming. It allows you to use a single codebase for the business logic of both iOS and Android apps and has separate platform-specific code where needed.</p>
+        </div>
+    </div>
+
+    <div class="section1">
+        <h2 id="intel">Intel XDK</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/intel.png" %}>
+            <p>Everyone in the tech world very well knows the name of Intel. Intel XDK permits developers to build cross-platform apps for every app store available. Thus, you can reach a wide range of audiences through an application. Additionally, it consists of plugins and web services for various responsive applications, interactive mobile apps, rich content. Intel XDK is known for its support to developers in every task such as testing, debugging, and emulation.</p>
+           
+        </div>
+    </div>
+
+    
+    <div class="section1">
+        <h2 id="sencha">Sencha Touch</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/dart.png" %}>
+            <p>Sencha Touch offers cross-platform app development with JavaScript and HTML 5. It is known as a responsive enterprise-oriented development framework. It is one of the finest choices of developers in the world of mobile app development frameworks.</p>
+            <p>It allows building robust apps that provide near Native app experience. Moreover, it offers drag-and-drop features with HTML 5 application builder and ready-to-use mobile app templates. Apart from this, developers can add customized components to their virtual library for reuse.</p>
+        </div>
+    </div>
+
+    <div class="section1">
+        <h2 id="alamo">Alamofire</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/alamo.jpeg" %}>
+            <p>Alamofire is a framework written in Swift. It is popularly used for iOS app development. The framework is known to be AFNetworking’ If you intend to develop a Swift project, Alamofire can be the best choice because it ensures that your core networking library is dependable with your source code.
+
+            </p>
+           
+        </div>
+    </div>
+    <div class="section1">
+        <h2 id="native">Native Scripts</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/native.png" %}>
+            <p>When you plan to develop a cross-platform application for both iOS and Android, then Native script happens to be your choice. It is an open-source framework, which is used to build native apps. These apps have access to sections of a user’s phone such as cameras, GPS, contacts, and more. Above all, cross-platform app development has gained momentum because of its flexibility and comfort of development. </p>
+            <p>FEATURES OF NATIVE SCRIPT
+                <br>Developers can have cost-effective mobile app development with free tools. With Native script, they can save money by attaining a free license via Apache 2.
+                <br>The Native script is an easy-to-learn framework, as it is connected with JavaScript. Also, it offers code-sharing flexibility across any device.</p>
+        </div>
+    </div>
+
+    <div class="section1">
+        <h2 id="core">Core Data</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/coredata.jpeg" %}>
+           <p>CoreData is the framework provided by Apple to save, track, filter, and modify the data within the iOS applications. It is not the database, but it uses SQLite as it's persistent store. It is used to manage the model layer object in our application. It manages the object graphs, tracks the changes in the data, and modifies the data on the user interactions.</p>
+            <p>Core Data provides us with a collection of predefined modules that we can use to create, read, update, and delete objects in a persistence layer.</p>
+        </div>
+    </div>
+    <h2 id="db">Databases</h2>
+    <div class="lang">
+    <a href="#sqlite">SQLite</a>
+    <a href="#mysql">Mysql</a>
+    <a href="#firebase">Firebase</a>
+    <a href="#post">PostgreSQL</a>
+    <a href="#couche">coucheBaselite</a>
+    <a href="#realm">Realm</a>
+  
+    </div>
+    <div class="section1">
+        <h2 id="sqlite">SQLite</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/sq.png" %}>
+            <p>SQLite is an open-source relational database i.e. used to perform database operations on android devices such as storing, manipulating or retrieving persistent data from the database.</p>
+            <p>It is embedded in android bydefault. So, there is no need to perform any database setup or administration task i.e SQLite supports all the relational database features. In order to access this database, you don't need to establish any kind of connections for it like JDBC,ODBC e.t.c</p>
+        </div>
+    </div>
+    
+     <div class="section1">
+        <h2 id="mysql">Mysql</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/mysql.png" %}>
+           <p>MySQL is one of the most well-known SQL databases on the market, so it is also commonly used within the development of mobile applications. Offering multiple web frameworks, MySQL is a popular choice for developers that are working with structured datasets, so this database system is a great choice if you are developing a simple application that won’t change much over time. This is because MySQL is a vertically scalable relational database management system, so it is not always suitable for applications that require flexibility and mobility when it comes to the amount and type of data that is being stored.</p>
+        </div>
+    </div>
+    <div class="section1">
+        <h2 id="firebase">Firebase</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/fire.png" %}>
+            <p>Firebase is a Google-backed mobile and web app development platform based on the backend as a service (BaaS) system and consists of several pragmatic services and purposeful APIs to develop high-quality applications. Further, it also has an easy integration process with Android, iOS, and Unity setups using which apps can be built for all leading mobile and web platforms.</p>
+            <p>Many custom mobile app development companies utilize Firebase to build applications for their clients because of its ability to manage data in real-time and provide an enhanced app-usage experience to the users.</p>
+            <p>The reasons why multiple mobile app development services are linked with the Firebase for their app-building procedures is due to the availability of the given features such as:<br>
+            Authentication Libraries<br>Realtime Database<br>Google Analytics<br>Cloud Storage</p>
+        </div>
+    </div>
+    <div class="section1">
+        <h2 id="post">PostgreSQL</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/postgre.png" %}>
+           <p>PostgreSQL is also a SQL database, so it deals with the same rows and columns model as other relational database management systems. Unlike other SQL databases, PostgreSQL is also compatible with JSON, so it accommodates more data types than just structured data. PostgreSQL is commonly used when developing a database for mobile apps that are more simple and straightforward in their design and data schema. This ensures that the application can continue to run smoothly as the database grows.</p>
+        </div>
+    </div>
+
+    <div class="section1">
+        <h2 id="couche">coucheBaselite</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/couche.png" %}>
+            <p>Another NoSQL database, Couchbase is also a cloud-based system that is popular amongst technology companies that need to store large collections of information and data from their users. Through a distributed processing model, Couchbase is the go-to for the development of enterprise applications as it is a document database with multiple resources for mobile developers and engineers, such as the Couchbase Developer Portal. Couchbase is also an excellent option for mobile apps that require a database that is horizontally scalable and amenable to growth and change over time.</p>
+        </div>
+    </div>
+    <div class="section1">
+        <h2 id="realm">Realm</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/realm.png" %}>
+            <p>Realm Database is an offline-first mobile object database in which you can directly access and store live objects without an 
+            ORM.<br>
+
+                Live Objects always reflect the latest state of data in the database, which simplifies keeping your UI in sync with changes to your data.
+
+                <br>Atlas Device Sync synchronizes data between client-side realms and the server-side MongoDB Atlas cluster linked to your app. Realm Database synchronizes data in a background thread, abstracting away network usage so you don't have to worry about latency or dropped connections.
+
+                <br>The Realm SDKs integrate with App Services to easily and securely work with your data in Atlas.</p>
+        </div>
+    </div>
+
+ 
+</body>
+</html>

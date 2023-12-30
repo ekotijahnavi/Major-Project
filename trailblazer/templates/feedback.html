@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedbacks</title>
+    <link rel='stylesheet' href="{% static 'css/feedback.css' %}">
+</head>
+<body>
+    <a href="{% url 'home' %}"><input  class="button" type="button" value="home"></a>
+    <br>
+<div class="container" align='center'>
+<h1>Feedback Form</h1><hr>
+<form class="" action="" method="post" >
+    <p><label for="id_name">Name:</label> <input type="text" name="name" pattern="^([A-Z]|[a-z])*$" id="id_name" placeholder="Ex:-Jahnavi" required /></p>
+    <p><label for="id_email">Email:</label> <input type="email" name="email" id="id_email" pattern="^([a-z]|[0-9])*@gmail.com$" placeholder="Ex:-ekotijahnavi0504@gmail.com" required  /></p>
+    <p><label for="id_feedback">Feedback:</label> <textarea name="feedback" cols="40" rows="10" required id="id_feedback">
+    </textarea></p>
+{% csrf_token %}
+<button type="submit" >Submit Feedback</button>
+</t>
+<button type="reset">Reset</button>
+</form>
+{% if messages %}
+{% for message in messages %}
+    <small {% if message.tags %} class="{{message.tags}}" {% endif %}>{{message}}</small>
+{% endfor %}
+{% endif %}
+    </div>
+    <br>
+    <a href=""><button>refresh to see feedback</button></a>
+    <br><br>
+    <div class="feedback">
+        {% for instance in data %}
+        
+          <div class="name">{{instance.fields.Name}}</div>
+           
+              
+          <div class="feed"><a href="{{instance.fields.feedback}}">{{instance.fields.feedback}}</a></div>
+        
+        {% endfor %}
+        </div>
+ 
+</body>
+</html>

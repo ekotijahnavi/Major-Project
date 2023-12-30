@@ -1,0 +1,38 @@
+
+  div{
+  line-height:2;
+  border-style:inset;
+  border-color: #f5d742;
+  border-width:thick;
+  border-radius:10px 60px;
+  padding:10px 20px 30px 10px;
+  background: url("../images/8.jpg");
+  background-repeat:no-repeat;
+  background-size:1330px;
+}
+.t{
+  border-radius:10px 5px;
+  border-spacing: 2;
+  border-color:#f59062;
+  padding:10px;
+}
+.text{
+  color:lawngreen;
+  font-style: italic;
+  font-family:'serif';
+  font-weight: bold;
+  border-radius:10px 5px;
+  border-spacing: 2;
+  border-color:#f59062;
+  padding:10px;
+}
+.id{
+  line-height: 2.5;
+  font-size:20px;
+}
+.success
+{
+  color:green;
+  text-align: center;
+  font-size: 30px;
+}

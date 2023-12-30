@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ProjectIdeas</title>
+    <link rel='stylesheet' href="{% static 'css/projectideas.css' %}">
+    
+
+</head>
+<body>
+ 
+    <div class="menu-bar">
+     
+		<ul>
+      <li id="tb">Trailblazer</li>
+        <li class="active"><i class="fa fa-home"></i><a href={% url 'home' %}><input type="button" value="HOME" class="button"/></a></li>
+        <li class="active"><i class="fa fa-home"></i><a href="#CSE"><input type="button" value="CSE" class="button"/></a></li>
+        <li class="active"><i class="fa fa-home"></i><a href="#ECE"><input type="button" value="ECE" class="button"/></a></li>
+        <li class="active"><i class="fa fa-home"></i><a href="#CIVIL"><input type="button" value="CIVIL" class="button"/></a></li>
+        <li class="active"><i class="fa fa-home"></i><a href="#MECHANICAL"><input type="button" value="MECHANICAL" class="button"/></a></li>
+        
+        </ul>
+    </div>
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1/6</div>
+  <img src={% static "images/cse.jpg" %} style="width:80%">
+  <div class="text">CSE</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2/6</div>
+  <img src={% static "images/ece.jpg" %} style="width:80%">
+  <div class="text">ECE</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3/6</div>
+  <img src={% static "/images/civil1.jpg" %} style="width:80%">
+  <div class="text">Civil</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">4/6</div>
+  <img src={% static "images/mech.jpeg" %} style="width:80%">
+  <div class="text">Mechanical</div>
+</div>
+<div class="mySlides fade">
+  <div class="numbertext">5/6</div>
+  <img src={% static "images/cse1.jpg" %} style="width:80%">
+  <div class="text">CSE</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">6/6</div>
+  <img src={% static "images/mech1.jpg" %} style="width:80%">
+  <div class="text">Mechanical</div>
+  </div>
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span>  
+  
+
+</div>
+<script>
+    let slideIndex = 0;
+  
+    showSlides();
+
+    
+    function showSlides() {
+      let i;
+      let slides = document.getElementsByClassName("mySlides");
+      let dots = document.getElementsByClassName("dot");
+      for (i = 0; i < slides.length; i++) {
+        slides[i].style.display = "none";  
+      }
+      slideIndex++;
+      if (slideIndex > slides.length) {slideIndex = 1}    
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+      
+      setTimeout(showSlides, 4000); // Change image every 2 seconds
+    }
+    </script>
+&nbsp;
+&nbsp;
+<div id="CSE" class="com">
+  <h1>Computer Science  Engineering </h1>
+  <p>Students who are beginner in doing a project.This article might be helpful them.Project Ideas for beginners and final year project ideas in different domain is available here.</p>
+</div>
+
+<div class="image">
+  <h3>Abstracts</h3>
+  <a href="{% static "files/bookscape.pdf" %}" ><img src="{% static "images/book.png" %}" class="mypic" /></a>
+  <a href="{% static "files/onlinefood.pdf" %}" ><img src="{% static "images/food.png" %}" class="mypic" /></a>
+  <a href="{% static "files/imageprocessing.pdf" %}" ><img src="{% static "images/image.png" %}" class="mypic" /></a>
+  <a href="{% static "files/receipe.pdf" %}" ><img src="{% static "images/receipe.png" %}" class="mypic" /></a>
+  <a href="{% static "files/fakenewsdetection.pdf" %}" ><img src="{% static "images/fake.png" %}" class="mypic" /></a>
+  <a href="{% static "files/mypdf.pdf" %}" ><img src="{% static "images/5.jpg" %}" class="mypic" /></a>
+</div>
+
+<div class="center1">
+  <h1>To view and upload abstracts</h1>
+  <a href={% url 'cseab' %}><input type="button" value="click here" class="button"/></a>
+</div> 
+<!--ECE-->
+
+
+<div id="ECE" class="com">
+  <h1>Electonics and Communication Engineering </h1>
+  <p>Students who are beginner in doing a project.This article might be helpful them.Project Ideas for beginners and final year project ideas in different domain is available here.</p>
+</div>
+
+<div class="image">
+  <h3>Abstracts</h3>
+  <a href="{% static "files/receipe.pdf" %}" ><img src="{% static "images/receipe.png" %}" class="mypic" /></a>
+  <a href="{% static "files/onlinefood.pdf" %}" ><img src="{% static "images/food.png" %}" class="mypic" /></a>
+  <a href="{% static "files/receipe.pdf" %}" ><img src="{% static "images/5.jpg" %}" class="mypic" /></a>
+  <a href="{% static "files/mypdf.pdf" %}" ><img src="{% static "images/5.jpg" %}" class="mypic" /></a>
+  <a href="{% static "files/mypdf.pdf" %}" ><img src="{% static "images/5.jpg" %}" class="mypic" /></a>
+  <a href="{% static "files/mypdf.pdf" %}" ><img src="{% static "images/5.jpg" %}" class="mypic" /></a>
+</div>
+  
+<div class="center1">
+  <h1>To view and upload abstracts</h1>
+  <a href={% url 'abstract' %}><input type="button" value="click here" class="button"/></a>
+</div>  
+<div id="CIVIL" class="com">
+  <h1>Civil Engineering</h1>
+  <p>Students who are beginner in doing a project.This article might be helpful them.Project Ideas for beginners and final year project ideas in different domain is available here.</p>
+</div>
+
+<div class="image">
+  <h3>Abstracts</h3>
+  <a href="{% static "files/sandfilter.pdf" %}" ><img src="{% static "images/sand.png" %}" class="mypic" /></a>
+  <a href="{% static "files/Recycling.pdf" %}" ><img src="{% static "images/Recycling.png" %}" class="mypic" /></a>
+  <a href="{% static "files/strength.pdf" %}" ><img src="{% static "images/strength.png" %}" class="mypic" /></a>
+  <a href="{% static "files/mypdf.pdf" %}" ><img src="{% static "images/5.jpg" %}" class="mypic" /></a>
+  <a href="{% static "files/mypdf.pdf" %}" ><img src="{% static "images/5.jpg" %}" class="mypic" /></a>
+  <a href="{% static "files/mypdf.pdf" %}" ><img src="{% static "images/5.jpg" %}" class="mypic" /></a>
+</div>
+  
+<div class="center1">
+  <h1>To view and upload abstracts</h1>
+  <a href={% url 'civilab' %}><input type="button" value="click here" class="button"/></a>
+</div>
+
+<div id="MECHANICAL" class="com">
+  <h1>Mechanical  Engineering </h1>
+  <p>Students who are beginner in doing a project.This article might be helpful them.Project Ideas for beginners and final year project ideas in different domain is available here.</p>
+</div>
+
+<div class="image">
+  <h3>Abstracts</h3>
+  <a href="{% static "files/radiocontrolplane.pdf" %}" ><img src="{% static "images/radio.png" %}" class="mypic" /></a>
+  <a href="{% static "files/oxygen.pdf" %}" ><img src="{% static "images/oxygen.png" %}" class="mypic" /></a>
+  <a href="{% static "files/smartgrass.pdf" %}" ><img src="{% static "images/smartgrass.png" %}" class="mypic" /></a>
+  <a href="{% static "files/mypdf.pdf" %}" ><img src="{% static "images/5.jpg" %}" class="mypic" /></a>
+  <a href="{% static "files/mypdf.pdf" %}" ><img src="{% static "images/5.jpg" %}" class="mypic" /></a>
+  <a href="{% static "files/mypdf.pdf" %}" ><img src="{% static "images/5.jpg" %}" class="mypic" /></a>
+</div>
+  
+
+<div class="center1">
+  <h1>To view and upload abstracts</h1>
+  <a href={% url 'mechab' %}><input type="button" value="click here" class="button"/></a>
+</div> 
+</body>
+
+
+</html>

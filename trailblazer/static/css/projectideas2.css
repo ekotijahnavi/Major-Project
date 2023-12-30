@@ -1,0 +1,28 @@
+
+.image
+{
+    width:95%;
+    border:4px solid #758f04;
+    margin:auto;
+    margin-top: 100px;
+    height:600px;
+    padding-left: 60px;
+    padding-right: 20px;
+    align-items: center;
+    background-color:honeydew;
+}
+.mypic
+{
+    height:200px;
+    width: 200px;
+    margin:40px;
+    border-width: 4px;
+    border-radius: 20px 20px;
+    border-color:#1beca6
+}
+.mypic:hover{
+    height:210px;
+    width:220px;
+    transition: 2s;
+    box-shadow:10px 10px 10px #5fc005;
+}

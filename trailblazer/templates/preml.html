@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prerequisites  for Machine Learning</title>
+    <link rel="stylesheet" href="{% static 'css/preml.css' %}">
+    <link rel="stylesheet" href="{% static 'css/preml1.css' %}">
+</head>
+<body>
+    <a href="{% url 'preview' %}"><input  class="button" type="button" value="back">
+    </a>
+    <h1>Machine Learning</h1>
+    <div class="center1">
+        <img class="back" src={% static "images/ml1.jpeg"%}>
+        <p class="p">Machine learning is one of the most exciting technologies that one would have ever come across. As it is evident from the name, it gives the computer that which makes it more similar to humans: The ability to learn. Machine learning is actively being used today, perhaps in many more places than one would expect. We probably use a learning algorithm dozens of time without even knowing it. <br>
+            <span>Applications of Machine Learning include:</span><br>
+
+           <span>Web Search Engine:</span>  One of the reasons why search engines like google, bing etc work so well is because the system has learnt how to rank pages through a complex learning algorithm.
+            <br><span>Photo tagging Applications:</span> Be it facebook or any other photo tagging application, the ability to tag friends makes it even more happening. It is all possible because of a face recognition algorithm that runs behind the application.
+            <br><span>Spam Detector:</span> Our mail agent like Gmail or Hotmail does a lot of hard work for us in classifying the mails and moving the spam mails to spam folder. This is again achieved by a spam classifier running in the back end of mail application.
+            <br><span>Augmentation:</span>Machine learning, which assists humans with their day-to-day tasks, personally or commercially without having complete control of the output. Such machine learning is used in different ways such as Virtual Assistant, Data analysis, software solutions. The primary user is to reduce errors due to human bias.
+            <br><span>Automation:</span>Machine learning, which works entirely autonomously in any field without the need for any human intervention. For example, robots performing the essential process steps in manufacturing plants.
+            <br><span>Finance Industry:</span>Machine learning is growing in popularity in the finance industry. Banks are mainly using ML to find patterns inside the data but also to prevent fraud.
+            <br><span>Government organization:</span>The government makes use of ML to manage public safety and utilities. Take the example of China with the massive face recognition. The government uses Artificial intelligence to prevent jaywalker.
+            <br><span>Healthcare industry: </span>Healthcare was one of the first industry to use machine learning with image detection.
+            <br><span>Marketing:</span>Broad use of AI is done in marketing thanks to abundant access to data. Before the age of mass data, researchers develop advanced mathematical tools like Bayesian analysis to estimate the value of a customer. With the boom of data, marketing department relies on AI to optimize the customer relationship and marketing campaign. </p>
+    </div>
+    <div class="menu">
+        <ol><a href="#pre">Top 5 Prerequisites to Learn Machine Learning</a>
+            <ul><a href="#statistics">Statistics</a></ul>
+            <ul><a href="#prob">Probability</a></ul>
+            <ul><a href="#linear">Linear Algebra</a></ul>
+            <ul><a href="#cal">Calculus</a></ul>
+            <ul><a href="#prog">Programming Languages</a></ul>
+            <ul><a href="#choose">Choosing the Right Programming Language</a></ul>
+            <ul><a href="#con">Conclusion</a></ul>
+        </ol>
+    </div>
+    <div class="section">
+        <h2 id="statistics">STATISTICS</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/sta.jpeg" %}>
+            <p>Statistics, as a discipline, is concerned mainly with data collection, sorting, analysis, interpretation, and presentation. Some of you might have already guessed how statistics is of value to Machine Learning. Data is, of course, a huge part of any technology today. Let us talk about how statistics fit into all this.</p>
+            <p>There are two kinds of statistics; one is descriptive statistics and the other is inferential statistics. Descriptive statistics, as its name suggests, is numbers that describe a certain data set, i.e., descriptive statistics summarizes the data set at hand into something more meaningful. Inferential statistics conclude from a sample instead of the entire data set.</p>
+            <p>A machine learning expert will have to be familiar with:<br>
+                Mean<br>
+                Median<br>
+                Standard deviation<br>
+                Outliers<br>
+                Histogram.</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 id="prob">PROBABILITY</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/prob.jpeg" %}>
+            <p>Probability describes how likely it is for an event to occur. All data-driven decisions stem from the foundation of probability. <br>In machine learning, you will be dealing with:</p>
+            <p>
+                Notation<br>
+                Probability distribution, joint and conditional<br>
+                Different rules of probability—Bayes theorem, sum rule, and product or chain rule<br>
+                Independence<br>
+                Continuous random variables.</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 id="linear">Linear Algebra</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/linear.png" %}>
+            <p> While linear algebra is integral to machine learning, the dynamics between the two are a little vague and are only explicable through abstract concepts of vector spaces and matrix operations.</p>
+            <p> Linear algebra, in machine learning, covers concepts such as:<br>
+                Algorithms in code<br>
+                Linear transforms<br>
+                Notations<br>
+                Matrix multiplication<br>
+                Tensor and tensor rank.</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 id="cal">Calculus</h2>
+        <div class="center">
+            
+            <p> Calculus is crucial to building a machine learning model. An integral part of several Machine Learning algorithms, calculus is another way for you to aim for a machine learning career.
+            </p>
+            <p>
+                Basic knowledge of integration and differentiation<br>
+                Partial derivatives<br>
+                Gradient or slope<br>
+                Chain rule—for training neural networks<br>
+               </p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 id="prog">Programming Languages</h2>
+        <div class="center">
+           
+            <p> 
+                It is good to have a sound foundation in programming as machine learning algorithms are put into effect with code. While you can get away as a novice programmer and focus on the mathematics front, it is advised to pick up at least one programming language as it will truly help your understanding of the internal mechanisms of machine learning. However, you need to pick up a programming language that will make it easy to implement machine learning algorithms.</p>
+        
+            <h4> Here are a few popular programming languages:
+            </h4>
+            <br>
+            <p><b>Python:</b></p>
+            <p>Python’s easy syntax, built-in functions, and wide package support make it popular for machine learning, especially for beginners. It has the most-supported libraries. Through the Python Package Index (PyPI,) you can access over 235,000 packages. There is also great community support to learn Python.
+
+                <br>In Python, you will learn:
+                
+               <br> NumPy for mathematical operations
+                <br>TensorFlow for Deep Learning
+                <br>PyTorch package for deep learning
+                <br>OpenCV and Dlib for computer vision
+                <br>scikit-learn for classification and regression algorithms
+                <br>pandas for file operations
+                <br>Matplotlib for data visualization and more
+                <br>Python is, however, relatively slower than other languages and also faces multithreading struggles.</p>
+               <br>
+                <p><b>R</b></p>
+                <p>R is another one of the AI and machine learning prerequisites that are as widely used as Python. Nowadays, various machine learning applications are implemented through R. It comes with good library support and graphs.
+
+                <br><b>Here are a few of the key packages that are supported by R:</b>
+                
+                <br>Kernlab and Caret for regression and classification-based operations
+               <br> DataExplorer for data exploration
+                <br>Rpart and SuperML for machine learning
+                <br>Mlr3 for machine learning workflows
+                <br>Plotly and ggplot for data visualization
+                <br>R is also relatively slower than C++ and can be difficult for beginners, unlike Python.</p>
+                <br>
+                <p><b>C++</b></p>
+                <p>Due to its portability feature, C++ is known to be majorly employed in games and large systems. It establishes a good understanding of logic building and is the go-to programming language for building libraries. As one of the prerequisites for machine learning, C++ supports:
+
+                    <br>TensorFlow and Microsoft Cognitive Toolkit (CNTK) for deep learning
+                    <br>OpenCV for computer vision
+                    <br>Shogun and mlpack for machine learning
+                    <br>OpenNN, FANN, and DyNet for neural networks
+                    <br>C++ has its shortcomings due to its syntax-oriented approach, which can be difficult for beginners. It also does not have good library support.</p>
+                    <br>
+                    <p><b>MATLAB</b></p>
+                <p>MATLAB or matrix laboratory supports machine learning operations and is used in applications and computer vision.</p>
+                <p>MATLAB has several predefined functions in addition to GUI. MATLAB is not syntax-oriented. The MATLAB compiler helps to share programs as independent apps and web apps. MATLAB uniquely supports machine learning. MATLAB provides:
+                    <br>Optimized and reduced coded models using AutoML<br>
+                    Sensor analytics using automatic code generation and much more
+                </p>
+                <p>Despite all of its pros, MATLAB is not readily accessible or free; the compiler is rather costly to buy. So, the majority of MATLAB’s target audience is solely in the researcher community.</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2 id="choose">Choosing the Right Programming Language</h2>
+            <div class="center">
+                <p>As you have already seen, every programming language has its pros and cons. So, which one should you be learning as a prerequisite for machine learning? It comes down to your area of interest. If you want to get into game development, C++ is the language that you should consider mastering. You can also go for C++ if you want to develop packages. A research-oriented professional, on the other hand, will do well with MATLAB.
+
+                </p>
+                <p>In terms of machine learning, Python and R go neck to neck. As far as the learning path is concerned, both of these programming languages come with terrific support, especially online. Out of the two, however, Python is more preferred by those who are new to coding. Machine learning scientists who work on sentiment analysis prioritize Python (44%) and R (11%,) according to Developer Economics.</p>
+            </div>
+        </div>
+        <div class="section">
+            <h2 id="con">Conclusion</h2>
+            <div class="center">
+                <p>Along with knowing the important prerequisites for machine learning, you should also know how to work with data. It is an essential skill if you want to pursue machine learning seriously. In this blog, we covered the essential prerequisites of machine learning, along with the pros and cons of some of the most preferred programming languages for the same. In short, machine learning requires statistics, probability, calculus, linear algebra, and knowledge of programming</p>
+        </div>
+
+
+
+
+
+   
+    
+   
+</body>
+</html>

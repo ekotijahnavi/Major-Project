@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECE Projects</title>
+    <link rel='stylesheet' href="{% static 'css/cse3.css' %}">
+</head>
+<body>
+    <a href="{% url 'home' %}"><input  class="button" type="button" value="back">
+    </a>
+    <h1>Electronic and Communication Engineering</h1>
+    <div class="center1">
+        <img class="back" src={% static "images/web6.jpg"%}>
+        <p class="p">This page provides you the Projects related different domains such as Web Development,Mobile Application Development,Machine Learning.You can visit the provided links to get projects,youc can view and download the project</p>
+        <br><p class="p">Domains:</p>
+        <p class="p"><a href="#vlsi">VLSI</a></p>
+        <p class="p"><a href="#iot">IoT</a></p>
+        <p class="p"><a href="#em">Embedded Systems</a></p>
+        
+
+    </div>
+    <div class="c">
+        <h1>Upload your projects and view others projects</h1>
+        <a href={% url 'ecepro' %}><input type="button" value="click here" class="button"/></a>
+    </div>
+    <div class="section1">
+        <h2 id="vlsi">VLSI</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/vlsi.jpeg" %}>
+            <h2>1.Bluetooth Based Wireless Home Automation System</h2>
+            <p>Technology advancements have made possible the implementation of embedded systems within home appliances. This has added new capabilities and features, however, most of the time, the implementations are proprietary and networking is not always possible. Yet there is an increasing demand for smart homes, where appliances react automatically to changing environmental conditions and can be easily controlled through one common device. This paper presents a possible solution whereby the user controls devices by employing a central Field Programmable Gate Array (FPGA) controller to which the devices and sensors are interfaced. Control is communicated to the FPGA from a mobile phone through its Bluetooth interface. This results in a simple, cost-effective, and flexible system, making it a good candidate for future smart home solutions.</p>
+            <b>Check Source Code</b><a href="https://youtu.be/IH68jQBymhc">Bluetooth Based Wireless Home Automation System</a>
+
+            <h2>2.FPGA Based Robotic ARM Controller </h2>
+            <p>A robotic arm is a type normally programmable mechanical arm, which can be used to pick and place various objects in the industries from one place to another place. It may be the sum total of the mechanism or may be part of a more complex robot. The parts of these manipulators or arms are interconnected through articulated joints that allow both a rotational movement. The FPGA based project is implemented using Spartan3an Project Kit and Robotic ARM kit.</p>
+            <b>Check Source Code</b><a href="https://youtu.be/IZLpUqWP1sM">FPGA Based Robotic ARM Controller</a>    
+            <h2>3.Multi Channel UART using  FPGA </h2>
+            <p>To meet modern complex control systems communication demands, the project presents a multi-channel UART controller based on FIFO(First In First Out) technique and FPGA(Field Programmable Gate Array). The project presents the design method of asynchronous FIFO and structure of the controller implemented in Spartan3an FPGA Project kit. This controller is designed with FIFO circuit block and UART (Universal Asynchronous Receiver Transmitter) circuit block within FPGA to implement communication in modern complex control systems quickly and effectively. From the communication sequence diagrams, it is easy to know that this controller can be used to implement communication when master equipment and slaver equipment are set at different Baud Rate. It also can be used to reduce synchronization error between sub-systems in a system with several sub-systems. The controller is reconfigurable and scalable. </p>
+            <b>Check Source Code</b><a href="https://youtu.be/U0A0P0sl_YE">Multi Channel UART using  FPGA  </a>
+            <h2>4.Cloud based temperature Monitoring system using IOT </h2>
+            <p>Building a cloud-based monitoring system is very important to reduce the cost of maintaining servers, to avoid data losses and to make the access easy with multiple internet-connected devices ( computer, tablet, mobile phone)  at the same time anywhere in the world. There are various industrial areas it requires you to monitor temperature and update the status to the cloud. Food preservation is one of the areas where the temperature must be maintained at the lowest level.  IOT based temperature monitoring system help us to monitor the food preservation system temperature and update the data to the cloud at the regular interval. This IOT system can be constructed using Spartan3an FPGA Starter Kit, Wi-Fi Module, and IOT Cloud server.</p>
+            <b>Check Source Code</b><a href="https://youtu.be/X8z0Gl3ajFQ">
+            Cloud based temperature Monitoring system using IOT </a>    
+        </div>
+            
+    </div>   
+    <div class="section1">
+        <h2 id="iot">Internet Of Things(IoT)</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/iot1.jpeg" %}>
+            <p class="p">This page provides you the IoT Projects.You can visit the provided links to get projects,youc can view and download the project</p>
+            <h2>1.Air pollution monitoring system using IoT</h2>
+<p>Nowadays, the air quality is inferior in almost all metropolitan cities due to air pollution. Due to this human health is getting deteriorated and a lot of diseases have broken out.
+Air pollution monitoring systems using IoT can help in measuring air quality by leveraging the internet. In this project, LCD will display air quality in PPM constantly to monitor it regularly while saving essential logs for future usage. Whenever air quality degrades from a benchmark, the system triggers an alarm with the help of MQ135 and MQ6 sensors. These sensors can detect harmful gases in the air and measure the exact amount in real time.</p>
+
+<b>Check Source Code</b><a href="https://github.com/debadridtt/Air-Pollution-Monitoring-using-IoT-Data-Viz.-ML.git" >Air pollution monitoring system using IoT </a>
+
+
+
+<h2>2.Weather Reporting System using IoT</h2>
+
+<p>One of the best IoT-based projects is the Weather Report system which gives weather forecasts in the surrounding area. This project reduces dependency on weather forecasting agencies. The system collects information from the temperature, humidity, and rain sensors and reports statistics online with the help of the Internet. Red, yellow, and green alerts can be set to identify extreme calamities such as volcanoes, tsunamis, heavy rainfall, and many more. </p>
+
+<b>Check Source Code</b><a href="https://github.com/Rashmika-B/IoT-based-Weather-Reporting-System.git">Weather Reporting</a>
+
+ 
+<h2>3.Smart Alarm Clock using IoT</h2>
+
+<p>One of the most interesting IoT project ideas is Smart Alarm Clock. It will not only help you in wakening but also works as a functional device loaded with various features. Initiating a chat, voice commands, audio amplifier control, text-to-speech synthesizer, and others are a few of many features.</p>
+
+<b>Check Source Code</b><a href="https://github.com/rahulr56/iotapp-alarm-clock.git"> Smart Alarm </a>
+
+
+<h2>4.Smart Traffic Management System using IoT</h2>
+
+<p>As the population is increasing, so is the traffic on roads, IoT based smart traffic management system is the perfect answer to tackle present needs. The system can easily manage all the traffic on roads and offer special pathways in case of emergencies such as fire brigade or ambulances. Also, it is of great help to identify and monitor traffic violators throughout the day and night. Whenever traffic flow needs to be controlled dynamically, this system comes into the picture for emergency vehicles.</p>
+<b>Check Source Code</b><a href="https://github.com/ajeetpandeyy/IOT-BASED-SMART-TRAFFIC-LIGHT-MANAGEMENT-SYSTEM.-.git"> Smart Traffic management</a>
+
+<h2>5.Night Patrol Robot</h2>
+
+<p> There is no denying the fact that the crime ratio is maximum at night and night patrol robots is the perfect solution to it. A robot is equipped with a night vision camera and performs a 360-degree scan, identifies, and analyzes in case of some wrong activity, and generates alarming sounds. The robot can capture the image of the intruder and generate an alarm while sending the data to the user. Night patrol robots act like smart artificial security guards to protect your home, office, or other property.</p>
+
+
+<b>Check Source Code</b><a href="https://github.com/RakshanaG/Night-Patrolling-Robot.git"> Night Patrol Robot</a>
+
+
+        </div>
+    </div>     
+    <div class="section1">
+        <h2 id="em">Embedded Systems</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/em1.jpeg" %}>
+            <p class="p">This page provides you the embedded systems Projects.You can visit the provided links to get projects,youc can view and download the project</p>
+            <h2>1.Text Encryption Using Cryptographic Algorithms</h2>
+            <p>Encryption is the process of converting information into a hash code or a cipher, to prevent unauthorized access by adversaries. The authorized user would access the content via secure keys and validation measures. As a beginner, you can start with a cyber security project on text encryption. This project would help you break down the structure of algorithms like Caesar Cipher, Vigenere Cipher, Railfence Cipher, Autokey Cipher, Playfair Cipher, Beaufort Cipher, etc.
+            You can build a simple web application to encrypt and decrypt textual information that the user keys in. Remember that strong encryption should produce different outputs even given the same input.</p>
+            
+            <b>Check Source Code</b><a href=" https://gist.github.com/vlucas/2bd40f62d20c1d49237a109d491974eb" >Text Encryption Using Cryptographic Algorithms</a>
+            
+            
+            
+            <h2>2.Image Steganography System</h2>
+            p>Steganography is the process of concealing sensitive information within other non-secret text or data. You can take up image steganography as an advanced-level cyber security project by concealing coded texts in images. This software tool can send secret messages across the web via an image. Batch steganography, permutation steganography, LSB (Least Significant Bits), Bit-Plane complexity segmentation (BCPS), and CSSIS (Chaos-based Spread Spectrum Image Steganography) are a few algorithms for this project. Compromise or even noticing of the secure content in the images by third-party sources can be prohibited in this project. Here, the raw pixel data from the image is extracted and encoded with the text. The text is usually encoded as binary strings in the Android application. </p>
+            
+            <b>Check Source Code</b><a href="https://github.com/aksel/steganography-app.git" >Image Steganography System</a>
+            
+            
+            <h2>3. Credit Card Encryption and Decryption</h2>
+            <p>You can design a credit card encryption system to prevent unauthorized access and duplication by arbitrary sources. PCI (Peripheral Component Interconnect) Data Security Standards and cloud DLP (Data Loss Prevention). The encryption tool is designed to validate and restrict access to card tokenization services. A few examples of encryption algorithms are DES, AES, RSA, SHA256, ECC, etc. You would require a project code and a cloud service to create this cybersecurity project. </p>
+            
+            <b>Check Source Code</b><a href="https://github.com/Mastercard/client-encryption-java.git ">Credit Card Encryption and Decryption</a>
+            
+            
+            <h2>4. User Authentication System</h2>
+            <p>This advanced-level cyber security project may sound simple, but it combines all the expertise which you have gained in previous projects. In this project, you can develop a user authentication portal providing signup/register and log in/log out functions. Identity management, authentication, and authorization are a few key skills for this cybersecurity project. Here a database system also comes into the picture as it is a full-stack project. You can include features like multi-factor authentication, biometric authentication, facial recognition, etc also in your system. The tools which are needed for this project are text editors, Node, Object-Oriented Programming paradigms, SQLite, Yarn, and a good knowledge of model view controllers and frameworks.</p>
+            
+            <b>Check Source Code</b><a href="https://github.com/harshit977/User-Authentication-System-with-NodeJs.git ">User Authentication System</a>
+            
+            <h2>5. Antivirus</h2>
+            <p>If you are a passionate programmer starting your career in cyber security, you can also build your antivirus software! This is an intermediate-level project for cyber security. Malicious content and unauthorized hackers are identified and prevented with the help of this software. Features like real-time scanning, auto-clean, protection for multiple apps, automatic updates, malware detection, prevention, and removal can be added to your project.</p>
+            
+            <b>Check Source Code</b><a href="https://github.com/vanyasem/InfANT.git " >Antivirus</a>
+            
+        </div>
+    </div>  
+  
+</body>
+</html>

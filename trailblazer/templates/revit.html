@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prerequisites for Revit</title>
+    <link rel='stylesheet' href="{% static 'css/revit.css' %}">
+</head>
+<body>
+    <a href="{% url 'preview' %}"><input  class="button" type="button" value="back">
+    </a>
+    <h1>Revit</h1>
+    <div class="center1">
+        <img class="back" src={% static "images/revit.webp"%}>
+        <p class="p">Revit is a parametric and multidisciplinary design software that can virtually create and insert any building within a BIM process. Revit is not a true modeler, but an aggregator of construction components governed by a series of specific rules. In order to avoid issues within the Revit project, it must be set up carefully. Since each project has different characteristics and requirements, there is no standard procedure when starting a new one. However, becoming familiar with various situations and their necessary steps will greatly help.
+        </p>
+        <img class="back" src={% static "images/revit2.png"%}>
+        <p class="p">Projects of a certain BIM depth have specified provisions within <br>the BEP (BIM Execution Plan) [1], a document that greatly supports the design process while outlining the objectives, <br>the LoD (Level of Development) [2] and<br> BIM Use [3] of the project.</p>
+    </div>
+    <div class="section1">
+        
+        <div class="center">
+            <h2>Preliminary settings</h2>
+            <p>If there is no BEP available as a guide, it’s important to define the best setup for the Revit project before modeling, that is, whether it’ll be a single file or multiple files linked together. Revit is a database that can contain a lot of information, increasing its weight in Mbytes, considerably. In order to avoid compromising the software performance, the models should be separated according to the following circumstances, if applicable.
+            </p>
+            <p><span>Single Discipline Design:</span> there is no specific setting, one Revit file is enough.
+            <span>Multi-Discipline Design:</span> decide whether to model all disciplines using the same file or separate them into different files. Single-file modeling should only be used for very small projects. Otherwise, it’s better to have a URS [4] coordination file with shared coordinates.
+            <span>Design of multiple buildings in the same lot: </span>  each building has its own package of files (one for each discipline) and all files are stored inside an empty Revit file (Federated Model [5]). A URS coordination file and shared coordinates are required.
+            </p>
+
+        </div>
+    </div>
+    <div class="section1">
+        
+        <div class="center">
+            <h2>Template</h2>
+            <p>The step involving a good template setup is equally fundamental and delicate. If there's a BEP available, it would be easier to determine which families (building components such as doors, windows, etc.) to preload in the Revit file, as well as how to set the views, and the architectural, structural or plant settings that might be required.</p>
+            <p>Without a BEP, the design path should be studied at length to better predict what needs to be inserted into the project file.</p>
+            <p>In the event that the current project is similar to a previous one, the first step would be to extract the old project’s template. Ideally, there would be a standard template for the typical types of buildings. These templates would then be maintained over time, according to the evolution of families and design style. Most importantly, you should not rename and empty a previous Revit project of its 2D / 3D elements to begin a new project.</p>
+            <p>Revit is a database that keeps track of everything (even internal errors), so the end result would be a file that’s much heavier than normal and full of corruptions from the previous project(s). In this case, or if more information is needed, simply create a template or fill out a standard Revit template during project development with all the aforementioned settings, keeping in mind the “beacon”: the LoD and BIM Use.</p>
+            <img class="img" src={% static "images/re1.png" %}>
+        </div>
+    </div>
+    <div class="section1">
+        
+        <div class="center">
+            <h2>Shared Coordinates</h2>
+            <p>Generally, shared coordinates or geographic positioning aren’t necessary for a good design approach.</p>
+            <p>However, coordinated work between disciplines / multiple buildings in the same lot always requires shared positioning and setting of coordinates, as well as work that requires interoperability between software.</p>
+            <p>A base point established upstream ensures the project’s correct positioning. Typically, when starting from a survey, it’s the surveyor’s responsibility to provide a file (CAD or Revit) with the GIS [6] coordinates already entered and (theoretically) already established in the BEP. Once the link has been loaded into the project and its base point positioned in the Revit origin (e.g. via a roto-translation of the link), acquiring coordinates from the link itself is sufficient.</p>
+            <img class="img" src={% static "images/re2.png" %}>
+            <p>With a URS file available, simply link it to the project file to acquire its coordinates.
+
+                <br>The manual shifting tools of the Project Base Point and Survey Point, as well as the rotation of the Real North, are used to fix a poor coordination job, not to correct the entire project.
+                
+                </p>
+                <img class="img" src={% static "images/re3.png" %}>
+        </div>
+    </div>
+    <div class="section1">
+       
+        <div class="center">
+            
+            <h2>Grids and Levels</h2>
+            <p>If we have a URS file, we can bypass the creation of grids and levels by using the Copy / Monitor tool, allowing us to automatically copy the pre-established grids and levels (theoretically by the project leader) in the URS file and monitor their eventual change(s).</p>
+            <img class="img" src={% static "images/re4.png" %}>
+            <p>Even without this type of support, we still have the option of creating our grids and levels manually.</p>
+            <img class="img" src={% static "images/re5.png" %}>
+        </div>
+    </div>
+    <div class="section1">
+        
+        <div class="center">
+            <h2>Conclusions</h2>
+            <p>After following these steps and precautions, our Revit file will be ready to use, ensuring multidisciplinary information consistency. Correctly configuring the file’s parameters before modeling is an essential step in obtaining concrete and precise results.</p>
+        </div>
+    </div>
+    <div class="section1">
+        
+        <div class="center">
+            <h2>  Glossary</h2>
+            <p><span>[1] BIM Execution Plan:</span>a contractual document which defines the design standards, software and all executive methods according to which the BIM order must be developed.
+                <br><span>[2] Level of Development:</span> the level of development and detail of the 2D and 3D elements of the project.
+                <br><span>[3] BIM Use:</span> the use of the model once finished (e.g. for Rendering, for Constructive, for metric calculation, etc.)
+                <br><span>[4] URS (Unique Reference System):</span> an empty Revit file containing only the project coordinates, grids, and levels shared for all disciplines and buildings in the project. This file is initially loaded into the template to set Coordinates, Grids and Levels for each discipline and building.
+                <br><span>[5] Federated Model:</span> a coordination model (potentially also empty) containing the models that make up the project in its entirety between disciplines and building parts.
+                <br><span>[6] GIS (Geographic Information System):</span> a system capable of associating data with their geographical position on the earth's surface.</p>
+        </div>
+    </div>
+  
+
+
+
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSE Projects</title>
+    <link rel='stylesheet' href="{% static 'css/cse3.css' %}">
+</head>
+<body>
+    <a href="{% url 'home' %}"><input  class="button" type="button" value="back">
+    </a>
+    <h1>Computer Science Engineering</h1>
+    <div class="center1">
+        <img class="back" src={% static "images/web6.jpg"%}>
+        <p class="p">This page provides you the Projects related different domains such as Web Development,Mobile Application Development,Machine Learning.You can visit the provided links to get projects,youc can view and download the project</p>
+        <br><p class="p">Domains:</p>
+        <p class="p"><a href="#Webdev">Web Development</a></p>
+        <p class="p"><a href="#mad">Mobile Application Development</a></p>
+        <p class="p"><a href="#ml">Machine Learning</a></p>
+        
+
+    </div>
+    <div class="c">
+        <h1>Upload your projects and view others projects</h1>
+        <a href={% url 'csepro' %}><input type="button" value="click here" class="button"/></a>
+      </div> 
+        
+    <div class="section1">
+        <h2 id="Webdev">Web Development</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/web6.jpg" %}>
+            <p class="p">This page provides you the Web Development Projects.You can visit the provided links to get projects,youc can view and download the project</p>
+            <h2>1. To-do List Project</h2>
+            <p>A very basic and simple project with a daily life use case is a to-do list app. A to-do list is a very popular full-stack project for beginners. You can build a to-do list, just like Microsoft’s to-do list application. It will have the feature to add an item to the list and if the task is completed then the functionality to remove it from the list should also be provided. </p>
+            <b>Check Source Code:</b><a href='https://github.com/snyk-labs/nodejs-goof.git'>To-do List Project</a>
+           
+                
+            <h2>2.Blog Website</h2>
+                <p>A blog website is one where users can put up their thoughts about anything and everything. You can make it as creative as you want to. There are thousands of blog websites out there. You can take inspiration from any of these blog websites and create your own. </p>
+                <b>Check Source Code:</b><a href='https://github.com/rajaraodv/react-redux-blog.git'>Blog Website</a>
+                
+                <h2>3.Chat Website</h2>
+                <p> The user experience should be made as convenient as it can be. It should be easy for the user to send a message to a friend or a group and not a complicated procedure. Again, login and authentication are required for anyone to use this application.</p>
+                <b>Check Source Code:</b><a href='https://github.com/raineroviir/react-redux-socketio-chat.git'>Chat Website</a>
+                
+                <h2>4. Portfolio Website</h2>
+                <p>Portfolio websites are a very popular concept in today’s world. The developers build some awesome portfolio websites to showcase their skills and impress clients. Students or even professionals learning web development should make a portfolio website of their own as it is a great practice, especially front-end, and this is something where there are no limits. </p>
+                <b>Check Source Code:</b><a href='https://github.com/adrianhajdin/portfolio_website.git'>Portfolio Website</a>      
+            
+                <h2>5.E-commerce Website</h2>
+                <p>An e-commerce website/app is a very famous project and you will find it in almost every full-stack developer’s portfolio. This project is a very vast project and involves a lot of front-end, back-end as well as database knowledge. It is considered a major project and it takes a lot of hard work and time to make it.</p>
+                <b>Check Source Code:</b><a href='https://github.com/django-oscar/django-oscar.git'>E-commerce Website</a>
+            </div>
+            
+    </div>   
+    <div class="section1">
+        <h2 id="mad">Mobile Application Development</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/mad1.jpeg" %}>
+            <p class="p">This page provides you the Mobile Application Development Projects.You can visit the provided links to get projects,youc can view and download the project</p>
+            <h2>1.Tic Tac Toe Game</h2>
+    <p>Tic tac toe is a two-player game wherein the players will have to choose either X or O in a 3×3 grid. The first player can choose any position in the grid and both will get one move at a time, one after the other. The player who succeeds in placing three of their marks in a horizontal, vertical, or diagonal row wins the game. In the backend, the game will maintain a 2-D array to save the current state of the 3×3 grid. A function will be made to check if the box that’s clicked by the player in the displaying grid is empty or not and will decide to put up an image of O if the previous one was X and vice versa. And when the consecutive images match, the game ends.</p>
+
+    <b>Check Source Code</b><a href="https://github.com/karansthr/Tic-Tac-Toe.git" > Tic Tac Toe</a>
+
+
+    <h2>2.Photo Management Application</h2>
+
+    <p>The next android project idea for beginners is a photo management application. In this application, users would be able to see all the images present in their device in a grid layout structure. They would also be able to capture new images that would get stored on their device. This is a very basic project but it would definitely help you in learning important concepts. By building this project you’ll learn how any android application communicates with the internal storage of any device. You’ll also use the CameraX library for enabling image capture options. You’ll also learn about how to do image processing using Picasso or any other image library.</p>
+
+    <b>Check Source Code</b><a href="https://github.com/Anuj-Kumar-Sharma/Manage_iT.git">Photo Management</a>
+
+    <h2>3.News Application</h2>
+
+    <p>Coming to the next project idea which is a news application that would use an API(Application Programming Interface) for fetching the news from a server. API will work as an interface between your application and server, it will bring news and you will display all those news in a RecyclerView in your application. Users would click on a particular news item and it would open in their mobile browser. With building this application you’ll learn how to use libraries like Volley or Retrofit for making network calls and image display. You can extend this project for any other use case also by adding different APIs.  </p>
+
+    <b>Check Source Code</b><a href="https://github.com/sooshin/android-news-app.git"> News App</a>
+
+
+    <h2>Online voting system</h2>
+
+    <p>Standing in long queues and waiting for your turn for voting is no less than a challenge. This is where the online voting system comes into play. It will click the snap of the voters and verify it with the already existing data. And once the identity is confirmed, OTP (One Time Password) will be sent to their phone numbers. Subsequently, the voters can vote in a hassle-free manner. This will have two modules- admin and user. The admin will create and schedule voting and users will vote. There will be OTP generation, face verification, and voting.</p>
+
+    <b>Check Source Code</b><a href="https://github.com/CitizensFoundation/open-active-voting">Voting System</a>
+
+    <h2>4.Women Safety Application</h2>
+
+    <p>The women’s safety application will aim at providing the utmost safety to women. All they need to do is register themselves on the application and as soon as they sense something shady, they’ll press the power button thrice, and consequently, their location will be sent to the nearest police station and emergency contacts. If the woman reaches a safe space, she can press the stop button. This will have three modules- 
+
+    Admin module that will manage the application, view the user details and track the location.
+    The user module will be used by the women registered on the application. After registering themselves users would need to add details like emergency contacts, location etc. 
+    The guardian module will be the well-wishers of the users. They will also have to register on the application.
+    </p>
+    <b>Check Source Code</b><a href="https://github.com/Vinayak-09/women-safety-android.git">Women Safety App</a>
+    <h2>5.Ayurvedic Remedies Application</h2>
+    <p>Ayurveda is hands down the best cure for any and every disease that exists. This application will ask the users to enter their health-related details so that the cure to their disease can be provided to them accordingly by the consultants and experts. There will be two modules, first one will be the Admin (Doctors) module to view the posted health issues and details and provide solutions for the same. The second one will be the User (Patient) module where the problems and health history will be posted by the users to get ayurvedic solutions along with detailed reports. A payment gateway can also be added to this application. Doctors will charge some consultation fees and users will pay. Users would also be able to download medical receipts after making the payment. </p>
+    <b>Check Source Code</b><a href="https://github.com/kuralamuthan300/ayurvedic-medicine-catalogue.git"> Ayurvedic App</a>
+    </div>
+    </div>     
+    <div class="section1">
+        <h2 id="ml">Machine Learning</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/ml.jpeg" %}>
+            <p class="p">This page provides you the Mobile Machine Learning Projects.You can visit the provided links to get projects,youc can view and download the project</p>
+            <p class="p">This page provides you the Mobile Application Development Projects.You can visit the provided links to get projects,youc can view and download the project</p>
+            <h2>1.Home Value Prediction Project</h2>
+            <p>Take a situation into consideration where you wish to buy/sell a house, or you are relocating to a new city and you are looking for a rented house.
+            In this project, you will handle the dataset to develop a house price prediction model with XGBoost. The factors that are taken into consideration are average income, number of hospitals, number of schools, crime rate, etc.</p>
+            <b>Check Source Code</b><a href="https://github.com/Shreyas3108/house-price-prediction">House Value Prediction</a>
+        <h2>2.Sales Prediction Project</h2>
+        <p>As a novice, you should work on various machine learning project ideas to expand your skillset. This dataset comprises 2013 sales data for 1559 products beyond 10 different outlets in different cities. The goal is to develop a regression model to foretell the sales of all 1559 products for the subsequent year in all of the 10 different BigMart outlets.</p>
+        <b>Check Source Code</b><a href="https://github.com/storieswithsiva/Kaggle-Predicting-Future-Sales.git">Sales Prediction</a>
+
+        <h2>3.Music Recommendation System Project</h2>
+        <p>Based on the songs you’ve liked, Spotify will show similar songs that you may like. How does the system do this? This is a perfect example of where ML can be applied. The initial task is to foretell the possibilities of a user listening to a song on loop within a time frame. In the dataset, the prediction is regarded as 1 if the user has heard the same song within a month. The dataset comprises a list of songs that have been heard by which consumer and at what time. </p>
+        <b>Check Source Code</b><a href="https://github.com/ugis22/music_recommender.git">Music Recommendation Project</a>
+        <h2>4.Iris Flowers Classification ML Project</h2>
+        <p>Iris Flowers is one of the most simplistic machine learning datasets in classification literature. This machine learning problem is usually regarded as the “Hello World” of machine learning. The dataset has numeric traits and Machine Learning beginners need to comprehend how to handle and load data.</p>
+        <b>Check Source Code</b><a href="http://archive.ics.uci.edu/ml/datasets/Iris">Iris Flowers Dataset</a>
+        <h2>5.Stock Prices Predictor with the help of TimeSerie</h2>
+        <p>This is another fascinating machine learning project idea in the finance domain. A stock prices predictor determines the performance of a company and foretells future stock prices.
+        A time series is an interpretation of event occurrences over a span of time. A time series is investigated to recognize patterns so that future incidents can be foretold on the basis of trends witnessed over a span of time. Some of the models that can be applied for time series forecasting include ARIMA (autoregressive integrated moving average), moving average, and exponential smoothing.</p>
+        <b>Check Source Code</b><a href="https://github.com/huseinzol05/Stock-Prediction-Models.git">Stock Prices Predictor</a>
+
+        </div>
+    </div>  
+  
+</body>
+</html>

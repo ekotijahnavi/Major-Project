@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+{% load staticfiles%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prerequisites for Web Development</title>
+    <link rel='stylesheet' href="{% static 'css/preweb3.css' %}">
+   
+</head>
+<body>
+    <a href="{% url 'preview' %}"><input  class="button" type="button" value="back">
+    </a>
+    <h1>Web Development</h1>
+
+    <div class="center1">
+    <img class="back" src={% static "images/web6.jpg"%}>
+    <p class="p1">Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.</p>
+    <p class="p1">The word Web Development is made up of two words, that is:<br>
+    <span>Web:</span> It refers to websites, web pages or anything that works over the internet.<br>
+    <span>Development:</span> It refers to building the application from scratch.</p>
+    </div>
+    <br><br>
+    <div class="web">
+    <p>web development can be classfied into two types:</p>
+    <a href="#Frontend Development">frontend Development</a><br>
+    <a href="#Backend Development">Backend Development</a>
+    </div>
+    <h1 class="Frontend Development">Frontend Development</h1>
+    <div class="web">
+       
+        <p>The part of a website where the user interacts directly is termed as front end.<br> It is also referred to as the ‘client side’ of the application.</p>
+        <h2>Frontend Technologies</h2>
+        <a href="#html">HTML</a><br>
+        <a href="#css">CSS</a><br>
+        <a href="#Js">JAVASCRIPT</a>
+    </div>
+    <div class="web">
+        <h2>Frontend Frameworks</h2>
+        <a href="#angular">Angular</a><br>
+        <a href="#React">React</a><br>
+        <a href="#Vue">Vue.js</a><br>
+        <a href="#flutter">Flutter</a>
+    </div>
+    <div class="section">
+        
+        <h2 id="html">HTML</h2>
+
+        <div class="center">
+            <img class="img-deg" src={% static "images/html.jpeg" %}>
+            
+            <p>HTML stands for Hyper Text Markup Language.</p>
+            <p>It is used to design the front end portion of web pages using markup language.</p>
+            <p> HTML describes the structure of a Web page. It acts as a skeleton for a website since it is used to make the structure of a website.</p>
+            <p>HTML consists of a series of elements.</p>
+            <p>HTML elements tell the browser how to display the content.</p>
+            <p>
+                HTML elements label pieces of content such as "this is a heading", "this is a paragraph", "this is a link", etc.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        
+        <h2 id="css">CSS</h2>
+
+        <div class="center">
+            <img class="img-deg" src={% static "images/css.png" %}>
+            
+            <p>CSS stands for Cascading Style Sheets.</p>
+            <p>CSS is a style sheet language used for describing the presentation of a document written in a markup language such as HTML or XML</p>
+            <p>CSS is designed to enable the separation of content and presentation, including layout, colors, and fonts.[3] This separation can improve content accessibility; provide more flexibility and control in the specification of presentation characteristics; enable multiple web pages to share formatting by specifying the relevant CSS in a separate .css file, which reduces complexity and repetition in the structural content; and enable the .css file to be cached to improve the page load speed between the pages that share the file and its formatting.</p>
+           
+        </div>
+    </div>
+    <div class="section">
+        
+        <h2 id="Js">JAVASCRIPT</h2>
+
+        <div class="center">
+            <img class="img-deg" src={% static "images/js.png" %}>
+            
+            <p>JavaScript (js) is a light-weight object-oriented programming language which is used by several websites for scripting the webpages. It is an interpreted, full-fledged programming language that enables dynamic interactivity on websites when applied to an HTML document. It was introduced in the year 1995 for adding programs to the webpages in the Netscape Navigator browser. Since then, it has been adopted by all other graphical web browsers. With JavaScript, users can build modern web applications to interact directly without reloading the page every time. The traditional website uses js to provide several forms of interactivity and simplicity.</p>
+            
+           
+        </div>
+    </div>
+   
+    <div class="section">
+        
+        <h2 id="angular">ANGULAR</h2>
+
+        <div class="center">
+            <img class="img-deg" src={% static "images/angular.png" %}>
+            <p>Compared to Angular, AngularJS is based on JavaScript and has notions of scope and controllers instead of a hierarchy of components and services like Angular. AngularJS follows the MVC (model-view-controller) model, which acts as the central component and dictates how the applications behave. There is also no mobile support for AngularJS.</p>
+            <p>Angular is popular due to its ability to create multiple modules for a single web application. These modules can then act independently, and developers can compile them to create a single running, dynamic application for end-users. Angular helps developers ensure swift development and lighter and faster apps due to deleting unnecessary codes.</p> 
+            <p>Since Angular is developed and maintained by Google, there are many resources and communities that you can learn Angular from and for continuous support and guidance. This makes Angular one of the top frameworks for your mobile and web app projects.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 id="React">REACT.JS</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/React.png" %}>
+            <p>React is an open-source, front-end JavaScript library for creating interactive UIs. React is developed and maintained by Facebook and a large community of dedicated developers. React can also be used as a base for a single-page or mobile application.</p>
+            <p>React is based on the MVVM (Model-View-ViewModel) pattern, which ultimately allows the view and model to communicate directly with each other. This enables React to break down the app into modular, single-purpose components that are more complex for your applications.
+            </p> 
+            <p>React is for websites (front-end), while React Native is for mobile applications, including iOS and Android. Based on React, React Native helps developers produce mobile apps cross-platform with simplicity and flexibility.React is still one of the most popular JavaScript front-end frameworks despite being a library due to its clean programming, strong community, and fast performance</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 id="Vue">Vue.js</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/Vue.js.png" %}>
+            <p>Vue.js is an open-source MVVM (Model-View-ViewModel), front-end JavaScript framework for building web UIs and single-page applications. Vue.js is developed and maintained by Evan You and his teammates. Vue.js can be used for both desktop and mobile app development.
+            </p>
+            <p>Vue.js is popular due to its laid-back learning curve and ability to make web development a smooth and easy process. Vue.js is also very lightweight and flexible while producing high-quality products. Vue.js is also very user-friendly, with a ton of useful libraries and communities for developers, which makes it welcoming for beginners.
+            </p> 
+            <p>Vue.js is considered a progressive framework due to being adaptable and easy to integrate with other frameworks and libraries, making it easier for developers of other frameworks to learn and apply the technology.</p>
+        </div>
+    </div>
+
+
+    <div class="section">
+        <h2 id="flutter">FLUTTER</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/Flutter.png" %}>
+            <p>Flutter s a free, open-source mobile UI framework developed by Google for building fast and expressive native apps. Flutter can also be used for web content using standards-based web development technologies: HTML, CSS, and JavaScript. Developers can compile existing Flutter code and deploy it to any web server without a browser plug-in.
+
+            </p>
+            <p>Flutter for web architecture is depicted into two layers: The framework layer, which consists of pure Dart code, and the browser layer, which consists of C++ and JavaScript code. Even though Flutter is generally used for mobile applications, Flutter for the web is in its infancy stage. It is a very promising web technology due to its graphic sophistication and responsiveness.
+            </p> 
+           
+        </div>
+    </div>
+    <h1 id="Backend Development">Backend Development</h1>
+    <div class="web">
+       
+        <p>Backend is the server side of a website. It is part of the website that users cannot see and interact with.</p>
+        <p>It is the portion of software that does not come in direct contact with the users. It is used to store and arrange data.</p>
+        <h2>Backend Technologies</h2>
+        <a href="#php">PHP</a><br>
+        <a href="#java">JAVA</a><br>
+        <a href="#python">PYTHON</a><br>
+        <a href="#node">Node.js</a>
+    </div>
+    <div class="web">
+        <h2>Backend Frameworks</h2>
+        <p>The list of back end frameworks are: Express, Django, Rails, Laravel, Spring, etc.</p>
+        <a href="#django">Django</a><br>
+        <a href="#express">Express.js</a><br>
+        <a href="#spring">SpringBoot</a><br>
+    </div>
+    <div class="web">
+        <h2>Database</h2>
+        <p>The list of Databases used in Web Development are: MySQL,MongoDB,PostgreSQL,SQLite,Microsoft SQL Server,Oracle Database etc.</p>
+        <a href="#mysql">MySQL</a><br>
+        <a href="#mongo">MongoDB</a><br>
+        <a href="#postgre">PostgreSQL</a><br>
+    </div>
+    <div class="section">
+        <h2 id="php">PHP</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/php.jpeg" %}>
+            <p>PHP is an open-source, interpreted, and object-oriented scripting language that can be executed at the server-side. PHP is well suited for web development. Therefore, it is used to develop web applications (an application that executes on the server and generates the dynamic page.).
+
+                PHP was created by Rasmus Lerdorf in 1994 but appeared in the market in 1995. PHP 7.4.0 is the latest version of PHP, which was released on 28 November.</p>
+           <p>PHP script is executed much faster than those scripts which are written in other languages such as JSP and ASP. PHP uses its own memory, so the server workload and loading time is automatically reduced, which results in faster processing speed and better performance.</p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 id="java">JAVA</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/java.png" %}>
+            <p>Java is a popular programming language, created in 1995.
+
+                It is owned by Oracle, and more than 3 billion devices run Java.</p>
+                
+            <p>   It is used for:<br>
+                
+                Mobile applications (specially Android apps)<br>
+                Desktop applications<br>
+                Web applications<br>
+                Web servers and application servers<br>
+                Games<br>
+                Database connection<br>
+                And much, much more!<br>
+            </p>
+            <p><b>Java web frameworks:</b>
+                Spring(popular),
+                Google Web Toolkit,
+                Hibernate,
+                Struts,
+                Play,
+                Grails,
+                JavaServer Faces,
+                Dropwizard,
+                Vaadin,
+                Wicket,</p>    
+        </div>
+    </div>
+    <div class="section">
+        <h2 id="python">PYTHON</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/python.png" %}>
+            <p> Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.</p>
+                
+            <p>   It is used for:<br>
+                web development (server-side),<br>
+                software development,<br>
+                mathematics,<br>
+                system scripting,<br>
+                Datascience,<br>
+                Machine Learning.
+            </p>
+            <p><b>Python web frameworks:</b>Django,
+                Flask,
+                ActiveState Platform,
+                ArcGIS API for Python,
+                BlueBream,
+                Tornado,
+                Bottle,
+                CherryPy,</p>    
+        </div>
+    </div>
+   
+    <div class="section">
+        <h2 id="node">Node.js</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/node.png" %}>
+            <p>Node.js is a cross-platform runtime environment and library for running JavaScript applications outside the browser. It is used for creating server-side and networking web applications. It is open source and free to use. </p>
+            <p>Many of the basic modules of Node.js are written in JavaScript. Node.js is mostly used to run real-time server applications.
+
+            </p>
+            <p><b>Node.js web frameworks:</b>
+                Express.js,Adonis.JS,MeteorJS,NestJS etc</p>    
+        </div>
+    </div>
+    <div class="section">
+        <h2 id="django">Django</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/django1.png" %}>
+            <p>Django is a Python-based web framework that allows you to quickly create efficient web applications. It is also called batteries included framework because Django provides built-in features for everything including Django Admin Interface, default database – SQLlite3, etc. When you’re building a website, you always need a similar set of components: a way to handle user authentication (signing up, signing in, signing out), a management panel for your website, forms, a way to upload files, etc. Django gives you ready-made components to use and that too for rapid development.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 id="express">Express.js</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/express.png" %}>
+            <p>Express is a fast, assertive, essential and moderate web framework of Node.js. You can assume express as a layer built on the top of the Node.js that helps manage a server and routes. It provides a robust set of features to develop web and mobile applications.</p>
+            <p>Let's see some of the core features of Express framework:<br>
+
+                It can be used to design single-page, multi-page and hybrid web applications.<br>
+                It allows to setup middlewares to respond to HTTP Requests.<br>
+                It defines a routing table which is used to perform different actions based on HTTP method and URL.<br>
+                It allows to dynamically render HTML Pages based on passing arguments to templates.<br>
+                </p>
+        </div>
+    </div>
+    <div class="section">
+        <h2 id="spring">SPRINGBOOT</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/spring.png" %}>
+            <p>Spring Boot provides a good platform for Java developers to develop a stand-alone and production-grade spring application that you can just run.</p>
+            <p> Spring Boot is designed with the following goals −<br>
+                To avoid complex XML configuration in Spring.<br>
+                To develop a production ready Spring applications in an easier way.<br>
+                To reduce the development time and run the application independently.<br>
+                Offer an easier way of getting started with the application.<br>
+
+                </p>
+        </div>
+    </div>
+    <h2>DATABASE</h2>
+    <div class="section">
+        <h2 id="mysql">MySQL</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/mysql.png" %}>
+            <p>MySQL is currently the most popular database management system software used for managing the relational database. It is open-source database software, which is supported by Oracle Company. It is fast, scalable, and easy to use database management system in comparison with Microsoft SQL Server and Oracle Database. It is commonly used in conjunction with PHP scripts for creating powerful and dynamic server-side or web-based enterprise applications.</p>
+            <p>MySQL is a Relational Database Management System (RDBMS) software that provides many things, which are as follows:<br>
+
+            It allows us to implement database operations on tables, rows, columns, and indexes.<br>
+            It defines the database relationship in the form of tables (collection of rows and columns), also known as relations.<br>
+            It provides the Referential Integrity between rows or columns of various tables.<br>
+            It allows us to updates the table indexes automatically.<br>
+            It uses many SQL queries and combines useful information from multiple tables for the end-users.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 id="mongo">MongoDB</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/mongo.png" %}>
+            <p>Mongo DB is a document-oriented database. It is an open source product, developed and supported by a company named 10gen.</p>
+            <p>MongoDB is available under General Public license for free, and it is also available under Commercial license from the manufacturer.</p>
+            <p>The manufacturing company 10gen has defined MongoDB as:<br>
+
+            "MongoDB is a scalable, open source, high performance, document-oriented database." - 10gen
+                MongoDB was designed to work with commodity servers. Now it is used by the company of all sizes, across all industry.</p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 id="postgre">PostgreSQL</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/postgre.png" %}>
+            <p>PostgreSQL (pronounced as post-gress-Q-L) is an open source relational database management system (DBMS) developed by a worldwide team of volunteers. PostgreSQL is not controlled by any corporation or other private entity and the source code is available free of charge.
+            PostgreSQL supports a large part of the SQL standard and offers many modern features including the following −
+
+            Complex SQL queries<br>
+            SQL Sub-selects<br>
+            Foreign keys<br>
+            Trigger<br>
+            Views<br>
+            Transactions<br></p>
+        </div>
+    </div>
+
+    <div class="section">
+        <h2 id="oracle">Oracle</h2>
+        <div class="center">
+            <img class="img-deg" src={% static "images/oracle.png" %}>
+            <p>Oracle database is a relational database management system. It is also called OracleDB, or simply Oracle. It is produced and marketed by Oracle Corporation. It was created in 1977 by Lawrence Ellison and other engineers. It is one of the most popular relational database engines in the IT market for storing, organizing, and retrieving data.</p>
+            <p>Oracle database was the first DB that designed for enterprise grid computing and data warehousing. Enterprise grid computing provides the most flexible and cost-effective way to manage information and applications. It uses SQL queries as a language for interacting with the database.</p>
+        </div>
+    </div>
+
+</body>
+</html>
+
+

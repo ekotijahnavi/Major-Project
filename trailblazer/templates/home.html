@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html>
+<head>
+<title>home page</title>
+<link rel="stylesheet" href="{% static 'css/home1.css' %}">
+</head>
+	<body>
+       
+        
+		<b>
+		<div class="menu-bar">
+		<ul>
+			<div class="logo">
+				<img src={% static "images/l2.jpg" %}  alt="">
+				  </div>
+        <li class="active"><i class="fa fa-home"></i><a href="{% url 'projectideas' %}">ProjectIdeas</a></li>
+        <li class="active"><i class="fa fa-home"></i><a href="{% url 'preview' %}">PreRequisites</a></li>
+        <li class="active"><i class="fa fa-home"></i><a href="#">ProjectOverview</a>
+		<div class="sub-menu">
+			<ul>
+			<li><a href="{% url 'cseview' %}">CSE</a></li>
+			<li><a href="{% url 'eceview' %}">ECE</a></li>
+			<li><a href="#">CIVIL</a></li>
+			<li><a href="#">MECHANICAL</a></li>
+			</ul>
+		</div>
+		</li>
+		<li><a href="{% url 'about' %}">About us</a></li>
+		<li><a href="{% url 'contact' %}">Contact</a></li>
+       
+	   <li><a href="{% url 'feed' %}">Feedback</a></li>
+		
+        <li><a href="{% url 'loginaction' %}">Logout</a></li>
+		
+		
+		</ul>
+		</div>
+       </b>
+		<div class="scroll">
+		<marquee  scrollamount="15px" direction="right" width="200%">WELCOME TO TRAILBLAZER</marquee>
+		<marquee  scrollamount="15px"  id="caption">explore your thoughts</marquee>
+
+			
+			</div>
+	</body>
+</html>

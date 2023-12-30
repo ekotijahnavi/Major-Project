@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prerequisites</title>
+    <link rel='stylesheet' href="{% static 'css/prerequisites.css' %}">
+</head>
+<body>
+    <div class="menu-bar">
+		<ul>
+        <li id="tb">Trailblazer</li>
+        <li class="active"><i class="fa fa-home"></i><a href={% url 'home' %}><input type="button" value="HOME" class="button"/></a></li>
+        <li class="active"><i class="fa fa-home"></i><a href="#CSE"><input type="button" value="CSE" class="button"/></a></li>
+        <li class="active"><i class="fa fa-home"></i><a href="#ECE"><input type="button" value="ECE" class="button"/></a></li>
+        <li class="active"><i class="fa fa-home"></i><a href="#CIVIL"><input type="button" value="CIVIL" class="button"/></a></li>
+        <li class="active"><i class="fa fa-home"></i><a href="#MECHANICAL"><input type="button" value="MECHANICAL" class="button"/></a></li>
+        
+        </ul>
+    </div>
+    <div id="CSE" class="com">
+       <h1>Computer Science Engineering</h1>
+       <p>Students who are beginner in doing a project.This article might be helpful them.Prerequisites  like techonologies,databases,frameworks which is needed  for beginners to do pprojects in different domain is available here.</p>
+       <div class="section">
+            <div class="wrapper">
+                <div class="card">
+                    <img src={% static 'images/web2.jpeg' %}>
+                    <div class="info">
+                        <h2>Web Development</h2>
+                        <p>Web development is the work involved in developing a website for the Internet or an intranet.</p>
+                        <a href={% url 'preweb' %} class="btn">Read More</a>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <img src={% static 'images/mad2.jpeg' %}>
+                    <div class="info">
+                        <h2>Mobile Application Development</h2>
+                        <p>
+                            Mobile application development is the process of creating software applications that run on a mobile device, and a typical mobile application utilizes a network connection to work with remote computing resources.</p>
+                        <a href={% url 'madview' %} class="btn">Read More</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src={% static 'images/ml4.jpeg' %}>
+                    <div class="info">
+                        <h2>Machine Learning</h2>
+                        <p> Machine learning is a branch of artificial intelligence (AI) and computer science which focuses on the use of data and algorithms to imitate the way that humans learn, gradually improving its accuracy.</p>
+                        <a href={% url 'premlview' %} class="btn">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="ECE" class="com">
+        <h1>Electronics and Communication Engineering</h1>
+        <p>Students who are beginner in doing a project.This article might be helpful them.Prerequisites  like techonologies,databases,frameworks which is needed  for beginners to do pprojects in different domain is available here.</p>
+        <div class="section">
+             <div class="wrapper">
+                 <div class="card">
+                     <img src={% static 'images/vlsi.jpeg' %}>
+                     <div class="info">
+                         <h2>VLSI</h2>
+                         <p>Very-large-scale integration (VLSI) is the process of creating an integrated circuit (IC) by combining thousands of transistors into a single chip. VLSI began in the 1970s when complex semiconductor and communication technologies were being developed. The microprocessor is a VLSI device.</p>
+                         <a href={% url 'prevlsi' %} class="btn">Read More</a>
+                     </div>
+                 </div>
+ 
+                 <div class="card">
+                     <img src={% static 'images/em1.jpeg' %}>
+                     <div class="info">
+                         <h2>Embedded Systems</h2>
+                         <p>An embedded system is a computer system—a combination of a computer processor, computer memory, and input/output peripheral devices—that has a dedicated function within a larger mechanical or electronic system.</p>
+                         <a href={% url 'embedded' %} class="btn">Read More</a>
+                     </div>
+                 </div>
+                 <div class="card">
+                     <img src={% static 'images/iot1.jpeg' %}>
+                     <div class="info">
+                         <h2>IoT</h2>
+                         <p>The Internet of Things (IoT) describes the network of physical objects—“things”—that are embedded with sensors, software, and other technologies for the purpose of connecting and exchanging data with other devices and systems over the internet.</p>
+                         <a href={% url 'preiot' %} class="btn">Read More</a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <br>
+     <br>
+     <div id="CIVIL" class="com">
+        <h1>Civil Engineering</h1>
+        <p>Students who are beginner in doing a project.This article might be helpful them.Prerequisites  like techonologies,databases,frameworks which is needed  for beginners to do pprojects in different domain is available here.</p>
+        <div class="section">
+             <div class="wrapper">
+                 <div class="card">
+                     <img src={% static 'images/auto3.jpeg' %}>
+                     <div class="info">
+                         <h2>Auto CAD</h2>
+                         <p>AutoCAD is the most widely-used computer-aided design (CAD) software worldwide.</p>
+                         <a href={% url 'autocad' %} class="btn">Read More</a>
+                     </div>
+                 </div>
+ 
+                 <div class="card">
+                     <img src={% static 'images/revit1.jpeg' %}>
+                     <div class="info">
+                         <h2>Revit</h2>
+                         <p>Revit is a parametric and multidisciplinary design software that can virtually create and insert any building within a BIM process.</p>
+                         <a href={% url 'revit' %} class="btn">Read More</a>
+                     </div>
+                 </div>
+                 <div class="card">
+                     <img src={% static 'images/s.webp' %}>
+                     <div class="info">
+                         <h2>SketchUp</h2>
+                         <p>SketchUp is one of the most well-known 3D modeling tools in the trade for its intuitive UI and modeling experience.</p>
+                         <a href={% url 'sketchup' %} class="btn">Read More</a>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+     
+</body>
+</html>
